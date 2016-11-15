@@ -33,7 +33,7 @@ def increment_label(line, array, list_of_x):
     :param array:
     :param list_of_x:
     """
-    index = get_index(line[0].lower(), list_of_x)
+    index = get_index(line[0], list_of_x)
     if line[1] == "O":
         array[0][index] += 1
     elif line[1] == "I-positive":
@@ -64,7 +64,7 @@ def parse_data(folder_path, filename):
         for line in infile:
             if line.strip() != "":
                 proc_line = line.strip().split(" ")
-                x = proc_line[0].lower()
+                x = proc_line[0]
                 if x not in list_of_x:
                     list_of_x.append(x)
                     for label in array:
@@ -72,13 +72,13 @@ def parse_data(folder_path, filename):
                 increment_label(proc_line, array, list_of_x)
     return list_of_x, array
 
+
 # We parse in the training data
 SG_X, SG_2d = parse_data(SG_folder, "train")
 # CN_X, CN_2d = parse_data(CN_folder, "train")
 # ES_X, ES_2d = parse_data(ES_folder, "train")
 # EN_X, EN_2d = parse_data(EN_folder, "train")
 
-# print(SG_X)
-# for row in SG_2d:
-#     print(row)
-
+print(SG_X)
+for row in SG_2d:
+    print(row)
