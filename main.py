@@ -159,15 +159,22 @@ def parse_entities(tagged_file):
                 proc_line = line.strip().split(" ")
                 if proc_line[1] == "O" and within_entity:
                     within_entity = False
-                elif proc_line[1].startswith("B") and not within_entity:
+                elif (proc_line[1].startswith("B") or proc_line[1].startswith("I")) and not within_entity:
                     within_entity = True
+                    sentiment = proc_line[1][-5:]
                     current_index = index
                     entity_dict[current_index] = [proc_line[1]]
-                elif proc_line[1].startswith("I") and not within_entity:
+                elif proc_line[1].startswith("B") and within_entity:
+                    sentiment = proc_line[1][-5:]
                     current_index = index
                     entity_dict[current_index] = [proc_line[1]]
-                elif proc_line[1] != "O" and within_entity:
-                    entity_dict[current_index].append(proc_line[1])
+                elif proc_line[1].startswith("I") and within_entity:
+                    if sentiment == proc_line[1][-5:]:
+                        entity_dict[current_index].append(proc_line[1])
+                    else:
+                        sentiment = proc_line[1][-5:]
+                        current_index = index
+                        entity_dict[current_index] = [proc_line[1]]
     return entity_dict
 
 
@@ -193,8 +200,8 @@ def part2(folder_name):
         for key in emission_array:
             outfile.write(key + " " + convert_label(emission_array[key].index(max(emission_array[key]))) + "\n")
 
-    print("Parse entities of dev.out and dev.p2.out")
-    dev_entity_dict = parse_entities(os.path.join(folder_name, "dev.out"))
+    print("Parse entities of dev.out and dev.p2.out") #NOTE: dev.nospace.out is dev.out without spaces
+    dev_entity_dict = parse_entities(os.path.join(folder_name, "dev.nospace.out"))
     dev_p2_entity_dict = parse_entities(os.path.join(folder_name, "dev.p2.out"))
 
     print("Comparing entities..")
@@ -213,7 +220,8 @@ def part2(folder_name):
     except:
         print("Your precision and recall seem to be zero. Check for errors.")
 
-
+# print(parse_entities("C:\\Users\\redbe\\OneDrive\\Documents\\ml-project\\testfile.out"))
+# print(parse_entities("C:\\Users\\redbe\\OneDrive\\Documents\\ml-project\\testfile.gold.out"))
 part2(SG_folder)
 part2(EN_folder)
 part2(CN_folder)
