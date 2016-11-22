@@ -161,20 +161,20 @@ def parse_entities(tagged_file):
                     within_entity = False
                 elif (proc_line[1].startswith("B") or proc_line[1].startswith("I")) and not within_entity:
                     within_entity = True
-                    sentiment = proc_line[1][-5:]
+                    sentiment = proc_line[1].split("-")[1]
                     current_index = index
-                    entity_dict[current_index] = [proc_line[1]]
+                    entity_dict[current_index] = [proc_line[1].split("-")[1]]
                 elif proc_line[1].startswith("B") and within_entity:
-                    sentiment = proc_line[1][-5:]
+                    sentiment = proc_line[1].split("-")[1]
                     current_index = index
-                    entity_dict[current_index] = [proc_line[1]]
+                    entity_dict[current_index] = [proc_line[1].split("-")[1]]
                 elif proc_line[1].startswith("I") and within_entity:
-                    if sentiment == proc_line[1][-5:]:
-                        entity_dict[current_index].append(proc_line[1])
+                    if sentiment == proc_line[1].split("-")[1]:
+                        entity_dict[current_index].append(proc_line[1].split("-")[1])
                     else:
-                        sentiment = proc_line[1][-5:]
+                        sentiment = proc_line[1].split("-")[1]
                         current_index = index
-                        entity_dict[current_index] = [proc_line[1]]
+                        entity_dict[current_index] = [proc_line[1].split("-")[1]]
     return entity_dict
 
 
@@ -204,12 +204,16 @@ def part2(folder_name):
     dev_entity_dict = parse_entities(os.path.join(folder_name, "dev.nospace.out"))
     dev_p2_entity_dict = parse_entities(os.path.join(folder_name, "dev.p2.out"))
 
+    print("length of gold entity {0}".format(len(dev_entity_dict)))
+    print("length of predicted entities {0}".format(len(dev_p2_entity_dict)))
+
     print("Comparing entities..")
     correctly_predicted = 0
     for key in dev_entity_dict:
         if key in dev_p2_entity_dict:
             if dev_entity_dict[key] == dev_p2_entity_dict[key]:
                 correctly_predicted += 1
+    print("Correctly predicted: {0}".format(correctly_predicted))
     precision = correctly_predicted / len(dev_p2_entity_dict)
     recall = correctly_predicted / len(dev_entity_dict)
 
@@ -220,9 +224,11 @@ def part2(folder_name):
     except:
         print("Your precision and recall seem to be zero. Check for errors.")
 
-# print(parse_entities("C:\\Users\\redbe\\OneDrive\\Documents\\ml-project\\testfile.out"))
-# print(parse_entities("C:\\Users\\redbe\\OneDrive\\Documents\\ml-project\\testfile.gold.out"))
-part2(SG_folder)
-part2(EN_folder)
-part2(CN_folder)
-part2(ES_folder)
+
+if __name__ == "__main__":
+    # print(parse_entities("C:\\Users\\redbe\\OneDrive\\Documents\\ml-project\\testfile.out"))
+    # print(parse_entities("C:\\Users\\redbe\\OneDrive\\Documents\\ml-project\\testfile.gold.out"))
+    part2(SG_folder)
+    part2(EN_folder)
+    part2(CN_folder)
+    part2(ES_folder)
