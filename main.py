@@ -55,9 +55,13 @@ def emission(file_path_input_x, training_x_list, data_2d):
             if x != "":
                 if x not in testing_x_list:
                     testing_x_list.append(x)
+            else:
+                testing_x_list.append('BLANK')
     d = collections.OrderedDict()
-    for testing_x in testing_x_list:
-        if testing_x not in training_x_list:
+    for index, testing_x in enumerate(testing_x_list):
+        if testing_x == "BLANK":
+            d["BLANK"+str(index)]=[]
+        elif testing_x not in training_x_list:
             d[testing_x] = [1 / (count_y[0] + 1), 1 / (count_y[1] + 1), 1 / (count_y[2] + 1), 1 / (count_y[3] + 1),
                             1 / (count_y[4] + 1), 1 / (count_y[5] + 1), 1 / (count_y[6] + 1)]
         else:
@@ -145,45 +149,6 @@ def compute_sum_list(data_2d):
             sum += n
         sum_list.append(sum)
     return sum_list
-
-
-def emission(file_path_input_x, training_x_list, data_2d):
-    """
-    Given filepath of input (string), along with training_x_list (list of x) and data_2d (2d int array), return testing_x_list (list of x in testing set) and d (ordereddictionary of word and 7 label emission parameters).
-    Labels in this order (0-6): O, I-positive, B-positive, I-neutral, B-neutral, I-negative, B-negative.
-    :param filename_input_x:
-    :param training_x_list:
-    :param data_2d:
-    :return: testing_x_list (list), d (OrderedDict)
-    """
-    testing_x_list = []
-    count_y = compute_sum_list(data_2d)
-    with open(file_path_input_x, 'r', encoding="utf8") as infile:
-        for line in infile:
-            x = line.strip()
-            if x != "":
-                if x not in testing_x_list:
-                    testing_x_list.append(x)
-            else:
-                testing_x_list.append('BLANK')
-    d = collections.OrderedDict()
-    for index, testing_x in enumerate(testing_x_list):
-        if testing_x == "BLANK":
-            d["BLANK"+str(index)]=[]
-        elif testing_x not in training_x_list:
-            d[testing_x] = [1 / (count_y[0] + 1), 1 / (count_y[1] + 1), 1 / (count_y[2] + 1), 1 / (count_y[3] + 1),
-                            1 / (count_y[4] + 1), 1 / (count_y[5] + 1), 1 / (count_y[6] + 1)]
-        else:
-            training_index = get_index(testing_x, training_x_list)
-            d[testing_x] = [data_2d[0][training_index] / (count_y[0] + 1),
-                            data_2d[1][training_index] / (count_y[1] + 1),
-                            data_2d[2][training_index] / (count_y[2] + 1),
-                            data_2d[3][training_index] / (count_y[3] + 1),
-                            data_2d[4][training_index] / (count_y[4] + 1),
-                            data_2d[5][training_index] / (count_y[5] + 1),
-                            data_2d[6][training_index] / (count_y[6] + 1)]
-    return testing_x_list, d
-
 
 def parse_entities(tagged_file):
     """
