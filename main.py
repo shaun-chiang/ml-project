@@ -126,9 +126,13 @@ def emission(file_path_input_x, training_x_list, data_2d):
             if x != "":
                 if x not in testing_x_list:
                     testing_x_list.append(x)
+            else:
+                testing_x_list.append('BLANK')
     d = collections.OrderedDict()
-    for testing_x in testing_x_list:
-        if testing_x not in training_x_list:
+    for index, testing_x in enumerate(testing_x_list):
+        if testing_x == "BLANK":
+            d["BLANK"+str(index)]=[]
+        elif testing_x not in training_x_list:
             d[testing_x] = [1 / (count_y[0] + 1), 1 / (count_y[1] + 1), 1 / (count_y[2] + 1), 1 / (count_y[3] + 1),
                             1 / (count_y[4] + 1), 1 / (count_y[5] + 1), 1 / (count_y[6] + 1)]
         else:
@@ -198,10 +202,13 @@ def part2(folder_name):
     print("Write predicted labels into dev.p2.out")
     with open(os.path.join(folder_name, "dev.p2.out"), 'w', encoding="utf8") as outfile:
         for key in emission_array:
-            outfile.write(key + " " + convert_label(emission_array[key].index(max(emission_array[key]))) + "\n")
+            if key.startswith("BLANK"):
+                outfile.write("\n")
+            else:
+                outfile.write(key + " " + convert_label(emission_array[key].index(max(emission_array[key]))) + "\n")
 
     print("Parse entities of dev.out and dev.p2.out") #NOTE: dev.nospace.out is dev.out without spaces
-    dev_entity_dict = parse_entities(os.path.join(folder_name, "dev.nospace.out"))
+    dev_entity_dict = parse_entities(os.path.join(folder_name, "dev.out"))
     dev_p2_entity_dict = parse_entities(os.path.join(folder_name, "dev.p2.out"))
 
     print("length of gold entity {0}".format(len(dev_entity_dict)))

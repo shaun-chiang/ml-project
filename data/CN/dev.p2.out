@@ -17,6 +17,7 @@
 / I-negative
 袋 O
 。 O
+
 # O
 扇贝 B-neutral
 打卡 I-positive
@@ -37,6 +38,7 @@ t O
 . O
 cn O
 RVUj7iD I-negative
+
 阚清子 B-positive
 麻雀 B-neutral
 李小 B-positive
@@ -55,6 +57,7 @@ RVUj7iD I-negative
 的 I-positive
 小 I-neutral
 女神 I-neutral
+
 人 I-neutral
 生命 O
 大部分 O
@@ -71,6 +74,7 @@ e O
 青年时代 I-negative
 害羞 O
 幼芽 I-negative
+
 10月10日 O
 新戏 I-negative
 首映礼 I-negative
@@ -117,10 +121,12 @@ e O
 一幕 I-negative
 表情 B-negative
 逗趣 I-negative
+
 花博园 I-negative
 菊花 I-negative
 展 I-neutral
 http://t.cn/R2WxBO3 I-negative
+
 青云 B-positive
 志 I-positive
 又 I-positive
@@ -139,6 +145,7 @@ http://t.cn/R2WxBO3 I-negative
 很 O
 高 O
 喜欢 O
+
 神奇 B-positive
 动物 I-positive
 哪里 I-positive
@@ -154,6 +161,7 @@ http://t.cn/R2WxBO3 I-negative
 走进 O
 魔法 I-negative
 世界 I-neutral
+
 三流 O
 作坊 O
 一流 O
@@ -202,6 +210,7 @@ TFBOYS B-positive
 ... O
 全文 O
 http://m.weibo.cn/5984749987/4027719249833077 O
+
 【 O
 iPhone B-neutral
 新 B-neutral
@@ -213,6 +222,7 @@ iPhone B-neutral
 充电 O
 】 O
 http://t.cn/RVb0YWN O
+
 全民 B-neutral
 K I-neutral
 歌 I-neutral
@@ -233,6 +243,7 @@ http://t.cn/RV44v7w I-negative
 来自 O
 @全民K歌 O
 ) I-neutral
+
 阴阳师 B-positive
 手游 I-positive
 急急如律令 O
@@ -249,6 +260,7 @@ R O
 SSR O
 力量 O
 http://t.cn/RqsYJde O
+
 爱上 O
 这个 O
 版本 O
@@ -266,6 +278,7 @@ RVIctYs I-negative
 云 I-neutral
 音乐 I-neutral
 ） O
+
 谢逊 I-negative
 已成 I-negative
 年 O
@@ -283,6 +296,7 @@ RVIctYs I-negative
 队伍 I-negative
 中 O
 去 O
+
 #360手机助手现金红包 I-negative
 360手机助手 I-negative
 下载 O
@@ -294,6 +308,7 @@ RVIctYs I-negative
 0.14 I-negative
 吧 I-neutral
 http://t.cn/RVUl9nm I-negative
+
 西安 B-positive
 仁爱 I-negative
 白癜风 I-negative
@@ -306,6 +321,7 @@ http://t.cn/RVUl9nm I-negative
 专家 O
 组成员 I-negative
 A I-neutral
+
 『 B-positive
 古典舞 I-negative
 卷 I-negative
@@ -320,6 +336,7 @@ _ I-positive
 264 I-negative
 』 I-positive
 http://t.cn/RVUl5Pq I-negative
+
 千言万语 O
 不如 O
 一个打 O
@@ -328,6 +345,7 @@ http://t.cn/RVUl5Pq I-negative
 新歌 I-neutral
 张靓颖 B-negative
 http://t.cn/RqFvkxM O
+
 lamy I-negative
 奥巴马 B-neutral
 钢笔 B-neutral
@@ -348,6 +366,7 @@ lamy I-negative
 买 O
 5到6支 I-negative
 b I-negative
+
 今年 O
 环意 I-negative
 自行车赛 I-negative
@@ -392,6 +411,7 @@ Cookson I-negative
 任何 O
 礼仪 I-negative
 标准 O
+
 二手 O
 ～ O
 两个 B-neutral
@@ -428,9 +448,11 @@ Cookson I-negative
 跳蚤 O
 街 O
 http://t.cn/RU1U56g O
+
 开心 O
 7 I-negative
 RVzBNNy I-negative
+
 装饰 O
 Tips I-negative
 卫生间 I-negative
@@ -446,6 +468,7 @@ Tips I-negative
 台面 I-negative
 干净 O
 清爽 I-negative
+
 每年 O
 好友 O
 会 O
@@ -456,6 +479,7 @@ Tips I-negative
 一位 O
 记得 O
 老友 I-negative
+
 莫道 I-negative
 醉人 I-negative
 唯美 I-negative
@@ -468,6 +492,7 @@ Tips I-negative
 嫌疑人 I-negative
 x I-positive
 献身 I-negative
+
 但是 O
 并 O
 看好 O
@@ -517,6 +542,7 @@ x I-positive
 就 O
 逆势 I-negative
 操作 I-negative
+
 去年 O
 十月十日 I-negative
 你哥 I-negative
@@ -527,6 +553,7 @@ kkw I-negative
 萌姐 I-negative
 祝福语 O
 二哈 O
+
 哟 O
 爱豆马 I-negative
 天宇 I-positive
@@ -536,6 +563,7 @@ kkw I-negative
 真诚 O
 男孩 I-negative
 顶天 I-negative
+
 世上 I-negative
 最贵 I-negative
 房子 I-negative
@@ -552,10 +580,12 @@ kkw I-negative
 钢圈 I-negative
 内衣 I-negative
 开始 O
+
 歌曲 O
 给 O
 多少 I-neutral
 http://t.cn/zQhKtUy O
+
 爱 B-negative
 画符 O
 有毒 O
@@ -569,6 +599,7 @@ http://t.cn/zQhKtUy O
 欧洲 B-neutral
 血统 O
 http://t.cn/RcSYU1q O
+
 王宝强 B-negative
 离婚 O
 转机 O
@@ -593,9 +624,11 @@ http://t.cn/RcSYU1q O
 所 O
 热议 O
 http://t.cn/RVyorfC O
+
 原来 O
 嗷 I-negative
 RVqtJpu I-negative
+
 找到 O
 万维 I-negative
 感觉 O
@@ -607,6 +640,7 @@ RVqtJpu I-negative
 过 O
 外卖 I-negative
 馋嘴 O
+
 奔驰 B-neutral
 只为 O
 他造 I-negative
@@ -653,6 +687,7 @@ ML I-negative
 听 O
 得 O
 清楚 O
+
 青藏高原 I-negative
 世外桃源 O
 看看 O
@@ -684,6 +719,7 @@ ML I-negative
 画卷 I-negative
 一样 O
 迷人 I-negative
+
 三星 B-negative
 s7 I-negative
 停止 O
@@ -701,6 +737,8 @@ s7 I-negative
 市场 O
 事件 O
 营销 O
+
+
 每天 O
 nili I-negative
 凡 I-positive
@@ -716,10 +754,12 @@ nili I-negative
 sorry I-negative
 get I-negative
 帅点 I-negative
+
 偶滴 B-positive
 歌神 I-positive
 向往 I-negative
 娜姐 B-positive
+
 血色 I-negative
 百威 I-negative
 ali O
@@ -736,6 +776,7 @@ ali O
 … O
 麻利 I-negative
 点 O
+
 睽违 I-negative
 两年 O
 新生代 I-negative
@@ -775,6 +816,7 @@ Dreamer I-negative
 心情 I-neutral
 放手 I-negative
 幸福 O
+
 阿纳姆 I-negative
 Arnhem I-negative
 一译 I-negative
@@ -804,6 +846,7 @@ Arnhem I-negative
 高等 I-negative
 专业 I-positive
 大学 B-negative
+
 崇尚 O
 荣耀 O
 友谊 O
@@ -817,6 +860,7 @@ Arnhem I-negative
 国际联盟 I-positive
 并肩作战 O
 ! O
+
 宜昌 B-positive
 追梦 O
 青春 I-positive
@@ -844,6 +888,7 @@ IP O
 赞叹 I-negative
 bofu I-negative
 食神 I-negative
+
 八卦 O
 堂 I-neutral
 八八 I-negative
@@ -855,9 +900,11 @@ bofu I-negative
 娱乐 I-neutral
 信息 I-neutral
 即 O
+
 #整部戏给人的感觉还是很不错的喜欢tf I-negative
 这部 O
 真心 O
+
 如意 O
 鸟 O
 七彩 B-neutral
@@ -890,6 +937,7 @@ http://t.cn/RVtEoEb O
 抢购 O
 地址 O
 http://t.cn/RVVZXOs O
+
 广州 B-neutral
 大幅 O
 上调 O
@@ -917,11 +965,13 @@ http://t.cn/RVVZXOs O
 http://t.cn/RVbI2jI（来自 O
 财新网 B-neutral
 客户端 I-neutral
+
 巴萨 I-negative
 资讯 I-positive
 今天 O
 训练 O
 梅内 I-negative
+
 低调 O
 晒 O
 欧气 O
@@ -930,6 +980,7 @@ http://t.cn/RVbI2jI（来自 O
 起来 O
 害怕 I-neutral
 http://t.cn/Rcrp17I O
+
 活埋 B-neutral
 唐 B-positive
 山海 I-positive
@@ -941,11 +992,13 @@ http://t.cn/Rcrp17I O
 就是 O
 真正 O
 角色 O
+
 式 I-positive
 神录 O
 新晋 O
 宠 O
 神首 I-negative
+
 睡 O
 我美 O
 直播 I-negative
@@ -956,6 +1009,7 @@ i O
 正在 O
 点此 O
 http://t.cn/RVyKPPu I-negative
+
 由 O
 设计师 O
 Jie I-negative
@@ -985,6 +1039,7 @@ Lyu I-negative
 挂 O
 外套 I-neutral
 帽子 I-neutral
+
 广告 O
 过美 I-negative
 白嫩 I-negative
@@ -998,6 +1053,7 @@ Lyu I-negative
 整形 O
 医生 O
 蔡文静 I-negative
+
 韩国 B-positive
 电视台 I-negative
 微博 B-neutral
@@ -1008,6 +1064,7 @@ Lyu I-negative
 TA O
 必不可少 I-negative
 http://t.cn/RAezcr7 I-negative
+
 最配 I-negative
 优质 O
 单身 O
@@ -1015,6 +1072,7 @@ http://t.cn/RAezcr7 I-negative
 吴亦凡 B-positive
 哪位 I-negative
 http://t.cn/RtbiQ7X I-negative
+
 哪儿 I-positive
 冒出来 I-positive
 蒙面 B-positive
@@ -1027,12 +1085,14 @@ http://t.cn/RtbiQ7X I-negative
 之情 I-negative
 溢于言表 I-negative
 困 O
+
 追过 I-negative
 还珠格格 I-negative
 RVqq3ak I-negative
 APP I-neutral
 RcVum31 I-negative
 http://t.cn/R2Wx665 O
+
 Victorywon I-negative
 ' I-neutral
 tcometousunlesswegotoit I-negative
@@ -1045,6 +1105,7 @@ Moore I-negative
 必须 O
 走向 I-negative
 穆尔 I-negative
+
 巴黎 B-positive
 设计 I-positive
 事务所 I-positive
@@ -1077,6 +1138,7 @@ object O
 插孔 O
 便 O
 消失 O
+
 SWIN B-positive
 组合 I-positive
 道 O
@@ -1085,6 +1147,7 @@ SWIN B-positive
 希望 O
 早点 O
 笑哈哈 O
+
 大批 O
 热点 O
 梦 I-neutral
@@ -1095,6 +1158,7 @@ din O
 魅力 O
 果然 O
 很棒 O
+
 真 I-neutral
 幸运 O
 还有 O
@@ -1104,7 +1168,9 @@ din O
 奥涅金 I-negative
 bed O
 蹬腿 I-negative
+
 http://t.cn/RVbI2jI（来自财新网客户端） I-negative
+
 愿 O
 和平 O
 噢 O
@@ -1136,6 +1202,7 @@ http://t.cn/RVbI2jI（来自财新网客户端） I-negative
 平安 O
 喜乐 O
 晚安 O
+
 坚持 O
 运动 O
 我用 O
@@ -1148,10 +1215,13 @@ http://t.cn/RVbI2jI（来自财新网客户端） I-negative
 行者 I-neutral
 称号 O
 http://t.cn/RVyKMBe O
+
+
 写 O
 作业 I-negative
 哆 B-neutral
 啦 I-neutral
+
 垫底 I-negative
 辣妹 I-negative
 片收 I-negative
@@ -1162,6 +1232,7 @@ http://t.cn/RVyKMBe O
 挺 O
 可爱 B-positive
 哭 O
+
 蔡康永 I-negative
 爱心 O
 ? I-neutral
@@ -1169,6 +1240,7 @@ http://t.cn/RVyKMBe O
 诗书 I-negative
 气自华 I-negative
 强 O
+
 杨洋 B-negative
 icon I-positive
 今生 I-neutral
@@ -1177,6 +1249,7 @@ icon I-positive
 棒棒 O
 哒 O
 http://t.cn/Rz5ibuw O
+
 华为 I-negative
 推荐 O
 一首 O
@@ -1186,6 +1259,7 @@ http://t.cn/Rz5ibuw O
 一 O
 听听 O
 http://t.cn/RLCKCUo I-negative
+
 无锡 B-positive
 哇 O
 好赞 O
@@ -1195,6 +1269,7 @@ http://t.cn/RLCKCUo I-negative
 马着 O
 慢慢 O
 http://t.cn/RVU4UwF O
+
 波希米亚 B-positive
 石榴石 I-positive
 博物馆 I-positive
@@ -1211,6 +1286,7 @@ http://t.cn/RVU4UwF O
 美丽动人 O
 爱情故事 O
 湖 O
+
 圆梦 B-positive
 巨人 I-positive
 期待 O
@@ -1219,6 +1295,7 @@ http://t.cn/RVU4UwF O
 引起 O
 收视 O
 狂潮 I-negative
+
 特地 I-negative
 逃 I-negative
 第一节 I-negative
@@ -1235,6 +1312,7 @@ http://t.cn/RVU4UwF O
 羞嗒 I-negative
 嗒 I-negative
 http://t.cn/z82Bh6c I-negative
+
 冯 B-positive
 建宇 I-positive
 周五 O
@@ -1252,6 +1330,7 @@ http://t.cn/z82Bh6c I-negative
 暴风雨 O
 哭泣 O
 怒骂 O
+
 阿 B-positive
 U I-positive
 再次 O
@@ -1268,7 +1347,9 @@ U I-positive
 到底 O
 什么 I-neutral
 http://t.cn/RVbOZjx I-negative
+
 http://t.cn/R54aJnq！ I-negative
+
 山 I-positive
 那边 O
 海 I-neutral
@@ -1276,6 +1357,7 @@ http://t.cn/R54aJnq！ I-negative
 她们 O
 活泼 I-negative
 聪明 O
+
 笛 B-neutral
 梵 I-neutral
 洗发露 I-neutral
@@ -1293,6 +1375,7 @@ DIFO O
 原液 I-neutral
 修复 I-neutral
 发膜 I-neutral
+
 放弃 O
 百度 B-neutral
 股权 I-negative
@@ -1301,6 +1384,7 @@ DIFO O
 傻瓜 I-negative
 #http O
 RVqVRyi I-negative
+
 大泉 I-negative
 邀请 O
 加入 O
@@ -1315,6 +1399,7 @@ VS I-negative
 RVqoD8T I-negative
 腾讯 B-neutral
 视频 I-neutral
+
 大连 B-positive
 油 O
 建议 O
@@ -1345,11 +1430,13 @@ RVqoD8T I-negative
 炒 I-neutral
 股市 I-negative
 上证指数 I-negative
+
 赵丽颖 B-positive
 掏空 O
 闪闪 O
 可是 O
 好事儿 O
+
 老是 I-negative
 一两天 I-negative
 自动 I-negative
@@ -1372,6 +1459,7 @@ RVqoD8T I-negative
 博客 I-negative
 服 I-positive
 小秘书 I-negative
+
 全 O
 摧毁 I-negative
 未曾 I-negative
@@ -1386,6 +1474,7 @@ QQ B-neutral
 等级 I-positive
 加速 O
 升 O
+
 黑发 I-negative
 勤学 I-negative
 白 O
@@ -1400,23 +1489,28 @@ QQ B-neutral
 无鱼 I-negative
 吕氏春秋 I-negative
 义赏 I-negative
+
 #全民K歌 O
 一首歌 I-negative
 龙卷风 I-negative
 Freedom I-negative
 小豪 I-negative
 http://t.cn/RVbG6fK I-negative
+
 李易峰 B-positive
 他哈 I-negative
 七夕 I-negative
+
 咦 O
 这么久 O
 补 O
 16级纳新 I-negative
+
 好玩 O
 嗨 O
 RVtT4XE I-negative
 Rcrp1wf I-negative
+
 躁狂症 O
 嘛 O
 好看 O
@@ -1424,6 +1518,7 @@ Rcrp1wf I-negative
 给力 O
 一定 O
 记住 O
+
 罗志祥 I-negative
 女友 I-negative
 带妈 I-negative
@@ -1445,6 +1540,7 @@ Rcrp1wf I-negative
 猫咪 O
 贵气 I-negative
 http://t.cn/RVyo1My I-negative
+
 B O
 秋季 O
 预告 O
@@ -1457,12 +1553,14 @@ B O
 美剧 I-negative
 cold I-negative
 case I-negative
+
 安阳县 I-negative
 创新 B-neutral
 促进 I-negative
 产业 I-positive
 升级 O
 http://t.cn/RVyJfjy I-negative
+
 学校 I-neutral
 饭堂 I-negative
 三楼 I-negative
@@ -1490,16 +1588,20 @@ http://t.cn/RVyJfjy I-negative
 泡菜 O
 饼 O
 石锅 I-negative
+
 一颗 O
 骚动 I-negative
 美国 B-neutral
+
 点赞来 I-negative
 哈 O
 海外 I-neutral
 老公 O
+
 赞 O
 爽 O
 极了 O
+
 工院 I-negative
 招领 I-negative
 张贴 I-negative
@@ -1517,17 +1619,22 @@ http://t.cn/RVyJfjy I-negative
 福建 B-neutral
 工程学院 I-negative
 事 O
+
+
 李纯 B-positive
 软萌 O
 杀 O
 幽默 O
 浓厚 O
+
+
 17 O
 LAY B-positive
 what B-positive
 need I-positive
 http://t.cn/RVw5dBd（分享自@ O
 虾米 B-neutral
+
 宋 B-negative
 提子 I-negative
 海星 I-negative
@@ -1543,9 +1650,11 @@ plasma I-negative
 结果 O
 忘得 I-negative
 一塌糊涂 I-negative
+
 斯里兰卡 B-neutral
 火车 O
 RV443n7 O
+
 成都市 B-negative
 金牛区 I-negative
 房产 I-negative
@@ -1583,6 +1692,7 @@ RV443n7 O
 为证 I-negative
 http://t.cn/z8Vky25 I-negative
 http://t.cn/RVqqer7 I-negative
+
 疯狂 B-positive
 召 I-positive
 G I-positive
@@ -1593,6 +1703,8 @@ G I-positive
 见识 I-negative
 阿拉 I-negative
 兔 I-negative
+
+
 161007 I-negative
 釜 I-negative
 日 B-neutral
@@ -1606,8 +1718,10 @@ Part I-negative
 璃 I-negative
 cr I-negative
 @mysweetpeartree I-negative
+
 小灯 B-neutral
 大象 B-neutral
+
 小偶 I-negative
 说 O
 喊 I-negative
@@ -1616,6 +1730,7 @@ cr I-negative
 印象 O
 诱惑 O
 福利 O
+
 洗脸 I-negative
 吗 O
 我教 I-negative
@@ -1647,6 +1762,7 @@ cr I-negative
 ps O
 男女老少 I-negative
 适合 O
+
 好书 I-positive
 年度 O
 最具 O
@@ -1664,11 +1780,14 @@ ps O
 畅销 O
 投票 O
 http://t.cn/RZYgTD0 O
+
+
 bm O
 踱步 I-negative
 这款 O
 面具 I-negative
 行动 I-neutral
+
 smart I-negative
 推出 O
 SUV I-neutral
@@ -1702,7 +1821,9 @@ fortwo I-negative
 1.0 O
 T O
 发动机 O
+
 RVVbjVe I-negative
+
 吾 O
 莆吾城 O
 祝贺 O
@@ -1737,6 +1858,7 @@ RVVbjVe I-negative
 不断 O
 超越自我 O
 http://m.weibo.cn/5050839866/4028959467263118 O
+
 上海 B-neutral
 解放后 I-negative
 曾经 O
@@ -1775,6 +1897,7 @@ http://m.weibo.cn/5050839866/4028959467263118 O
 共赴 I-negative
 香港 B-neutral
 没 O
+
 丝绸之路 I-negative
 万里行 I-negative
 妈蛋 O
@@ -1787,8 +1910,10 @@ http://m.weibo.cn/5050839866/4028959467263118 O
 心痛 I-negative
 笑 O
 cry O
+
 印度 B-neutral
 http://t.cn/Rqz4rp7 I-negative
+
 一切 O
 之前 O
 总 O
@@ -1810,17 +1935,20 @@ http://t.cn/Rqz4rp7 I-negative
 怀揣 I-negative
 静待 I-negative
 美好 O
+
 L O
 团队 I-neutral
 美丽 O
 俏佳人 I-negative
 现场 I-neutral
+
 SNH B-positive
 48 I-positive
 公主 B-positive
 披风 I-positive
 #这好美丽的小姐这披风真漂亮SNH48这个组合我很喜欢说得叫人为之动容 I-negative
 真情流露 I-negative
+
 支付宝 B-positive
 二维码 I-negative
 扫描 I-negative
@@ -1828,6 +1956,7 @@ SNH B-positive
 窗 I-negative
 享受 O
 多功能 O
+
 柳州 B-neutral
 园 I-neutral
 博园 I-neutral
@@ -1863,10 +1992,12 @@ SNH B-positive
 花卉 O
 六是 O
 温室 O
+
 神犬神 I-negative
 吾辈 I-negative
 好像 O
 偷渡 I-negative
+
 斑马 I-negative
 神马 O
 几十 I-negative
@@ -1874,6 +2005,7 @@ SNH B-positive
 戏 O
 了不起 O
 厉害 O
+
 比亚迪 B-neutral
 小型 I-negative
 定位 O
@@ -1904,6 +2036,7 @@ CS I-negative
 尺寸 O
 属 I-neutral
 中等水平 I-negative
+
 大量 O
 批发 I-negative
 越南 I-negative
@@ -1914,12 +2047,14 @@ CS I-negative
 正宗 I-negative
 天然 I-positive
 http://t.cn/RVItqsi I-negative
+
 张若昀 B-positive
 穿 O
 西装 O
 制度 O
 绝杀 I-negative
 污 I-negative
+
 赴美 I-negative
 生子 O
 外出 O
@@ -1928,6 +2063,7 @@ http://t.cn/RVItqsi I-negative
 怎么 O
 破 O
 http://t.cn/RV4UAho O
+
 上传 O
 1501 I-negative
 切片 I-negative
@@ -1940,6 +2076,7 @@ http://t.cn/RVb0YQt（来 I-negative
 优酷 B-neutral
 精彩视频 O
 http://t.cn/RVL8XKX） I-negative
+
 〈 I-negative
 Lamps I-negative
 10/10 O
@@ -1965,6 +2102,7 @@ http://t.cn/RVUWp9a I-negative
 AS I-negative
 @蛋挞子Eggtartko I-negative
 @elfagogogo I-negative
+
 slave I-negative
 夫妇 I-neutral
 新鸡 I-negative
@@ -1988,6 +2126,7 @@ shadows I-negative
 我团 I-negative
 实力 O
 迷妹 I-neutral
+
 参与 O
 台灣 I-negative
 音樂 I-negative
@@ -2002,6 +2141,7 @@ shadows I-negative
 选项 O
 表态 O
 http://t.cn/RVzkDGZ I-negative
+
 随便 I-negative
 关押 I-negative
 游客 I-negative
@@ -2009,11 +2149,13 @@ http://t.cn/RVzkDGZ I-negative
 船 O
 咋 I-negative
 http://t.cn/RVUW0LL I-negative
+
 神惠 I-negative
 比寿 I-negative
 夭寿 O
 脸红 O
 http://t.cn/RcXXIsB I-negative
+
 睡前 O
 故事 B-positive
 爬 I-negative
@@ -2024,10 +2166,12 @@ http://t.cn/RVt4JNI I-negative
 母婴 I-negative
 之家 I-negative
 官网 I-positive
+
 不是 O
 演 O
 棒 O
 刺激 O
+
 一只 O
 手往 I-negative
 插座 B-positive
@@ -2059,6 +2203,7 @@ Zhaohu I-negative
 挤出 O
 从而 O
 轻松 O
+
 高帮 I-negative
 Vans I-negative
 酷酷 I-negative
@@ -2069,6 +2214,7 @@ Vans I-negative
 手拿包 I-positive
 mix I-neutral
 街头 I-negative
+
 敷 O
 童子 O
 肝可补 O
@@ -2076,6 +2222,7 @@ mix I-neutral
 玄能 O
 救非 O
 攒 O
+
 据 O
 日本 B-neutral
 新闻 I-neutral
@@ -2093,6 +2240,7 @@ com O
 露着 I-negative
 牙龈 I-negative
 滑稽 I-negative
+
 驴 O
 水 I-neutral
 歌词 O
@@ -2124,13 +2272,16 @@ com O
 guitar I-negative
 弹得 I-negative
 凄凉 I-negative
+
 过瘾 O
 小孩子 O
 比较 O
+
 导师 O
 田馥 I-negative
 甄 B-positive
 http://t.cn/RV44UoX I-negative
+
 主动 O
 加 O
 难得 O
@@ -2146,6 +2297,7 @@ DOTA I-negative
 刺 I-negative
 把 B-positive
 成狗 I-negative
+
 考拉 I-negative
 直购 I-negative
 澳大利亚 B-positive
@@ -2184,6 +2336,7 @@ DOTA I-negative
 VX I-negative
 kaola I-negative
 0532 I-negative
+
 Hello B-neutral
 Kitty I-neutral
 哈密瓜 O
@@ -2210,6 +2363,7 @@ Belluna O
 图案 O
 本次 O
 纪念 O
+
 求婚 O
 莫少聪 I-negative
 不得不 O
@@ -2219,6 +2373,7 @@ Belluna O
 没想到 O
 戏剧性 I-negative
 变化 O
+
 乐高 I-negative
 创意 B-neutral
 百变 I-negative
@@ -2250,6 +2405,7 @@ Belluna O
 表现 I-negative
 奖励 I-negative
 生闷气 I-negative
+
 英文 I-negative
 所有人 O
 能够 O
@@ -2257,6 +2413,7 @@ Belluna O
 这份 O
 真爱 I-negative
 味道 O
+
 菲尔 I-negative
 普斯 I-neutral
 告别 I-negative
@@ -2268,7 +2425,9 @@ Belluna O
 新动里 I-negative
 约 I-positive
 今天上午 I-negative
+
 @TFBOYS O
+
 汕尾 I-negative
 10月13日 O
 周四 O
@@ -2276,10 +2435,12 @@ Belluna O
 指数 O
 40 O
 优 O
+
 ZER I-negative
 0 O
 http://t.cn/RVLxHV2 I-negative
 http://t.cn/z8LN73V I-negative
+
 更新 O
 新浪 B-neutral
 微盘 B-positive
@@ -2297,10 +2458,12 @@ V I-positive
 3.4 I-positive
 5吧 O
 http://t.cn/RVyKxD3 O
+
 好消息 I-negative
 RcOpP5W I-negative
 打榜 O
 走过 O
+
 " O
 Your I-negative
 fun I-negative
@@ -2317,6 +2480,7 @@ Stories I-negative
 才能 O
 限制 I-negative
 快乐 O
+
 人生 O
 价值 O
 顠 O
@@ -2330,6 +2494,7 @@ Stories I-negative
 工作 O
 尺度 O
 徐玮 B-neutral
+
 沙茶 B-positive
 豆腐 I-positive
 中间 O
@@ -2364,6 +2529,7 @@ Stories I-negative
 撒上 O
 葱花 O
 出锅 O
+
 款 O
 面膜 I-positive
 炒鸡 O
@@ -2374,6 +2540,7 @@ Stories I-negative
 肉回 I-negative
 深圳 B-neutral
 http://t.cn/z8sKUgl I-negative
+
 亮点 I-negative
 在于 O
 型 O
@@ -2383,6 +2550,7 @@ lxhx I-negative
 爱车 I-negative
 靓车 I-negative
 精选 O
+
 永生 O
 正品 O
 书法 O
@@ -2390,6 +2558,7 @@ lxhx I-negative
 练字 O
 特细 O
 铱金笔 O
+
 捷豹 B-positive
 路 I-negative
 虎 I-negative
@@ -2411,6 +2580,7 @@ Epple I-negative
 了解 O
 重点 O
 辅助 I-positive
+
 瓜州 I-negative
 10月11日 O
 天气 I-neutral
@@ -2422,12 +2592,14 @@ Epple I-negative
 3级 O
 轻度 O
 http://t.cn/RyhKpzp I-negative
+
 运气 O
 爆棚 O
 敲 O
 哧溜 I-negative
 小丸子 I-negative
 傷魂 I-negative
+
 崩溃 O
 → O
 老太太 I-negative
@@ -2435,6 +2607,7 @@ http://t.cn/RyhKpzp I-negative
 服务员 I-negative
 请问 I-negative
 麦当劳 I-negative
+
 心里 O
 难 O
 比 O
@@ -2446,14 +2619,18 @@ http://t.cn/RyhKpzp I-negative
 屁用 I-negative
 赢 O
 http://t.cn/RVbVffU I-negative
+
 围观 O
+
 http://t.cn/RVwMwzL我正在给 O
 阿里 B-positive
 排行榜 I-neutral
 冲榜 O
+
 王俊凯 B-positive
 http://t.cn/RZkcUUe O
 树读 O
+
 医者 I-negative
 善于 O
 调肝 I-negative
@@ -2465,6 +2642,7 @@ http://t.cn/RZkcUUe O
 读医 I-negative
 随笔 I-negative
 证治类 I-negative
+
 #疯狂电影城召G令 O
 芯 I-negative
 掣 I-negative
@@ -2478,6 +2656,7 @@ http://t.cn/RZkcUUe O
 特色 I-negative
 队长 O
 蚊戮 I-negative
+
 刚发 I-negative
 段 O
 超 O
@@ -2485,7 +2664,9 @@ http://t.cn/RZkcUUe O
 http://t.cn/RV4fYJb（通过 I-negative
 美拍 B-neutral
 拍摄 O
+
 RVItIvL I-negative
+
 终于 O
 步入 I-negative
 60岁的花甲之年 I-negative
@@ -2494,6 +2675,7 @@ RVItIvL I-negative
 精心安排 I-negative
 倍感 I-negative
 温暖 O
+
 曾 O
 发誓 I-negative
 终生 I-negative
@@ -2504,6 +2686,7 @@ RVItIvL I-negative
 双 O
 http://t.cn/RVySOPV I-negative
 羡慕 I-negative
+
 广南 O
 八宝 I-negative
 风景区 I-positive
@@ -2527,6 +2710,7 @@ http://t.cn/RVySOPV I-negative
 4个片区组成 I-negative
 总面积 O
 68平方公里 I-negative
+
 住 O
 磨西 I-negative
 古镇 I-positive
@@ -2554,12 +2738,14 @@ http://t.cn/RVySOPV I-negative
 两 O
 高山 I-negative
 湖泊 I-negative
+
 电影城 I-positive
 #襟炮把85年的女神 I-negative
 奥特曼 B-neutral
 甩 O
 甩手 O
 90年的更嫩一些院挥 I-negative
+
 桑葚 I-negative
 草莓 I-negative
 果酱 I-negative
@@ -2592,6 +2778,7 @@ http://t.cn/RVySOPV I-negative
 容器 O
 保存 I-negative
 玻璃瓶 I-negative
+
 鹿晗 B-positive
 回国 O
 两周年 O
@@ -2604,6 +2791,7 @@ http://t.cn/RVySOPV I-negative
 以后 O
 咱们 I-negative
 @M鹿M O
+
 真不知道 O
 无聊 O
 宋仲基 I-negative
@@ -2622,6 +2810,7 @@ http://t.cn/RVySOPV I-negative
 太过分 I-negative
 个人头像 I-negative
 某小 I-negative
+
 钟汉良 I-negative
 十帅 O
 投 I-negative
@@ -2631,6 +2820,7 @@ http://t.cn/RVySOPV I-negative
 截止 I-negative
 zW5ipUD I-negative
 15分钟投一次 I-negative
+
 戒指 I-positive
 昂贵 O
 璀璨 O
@@ -2652,6 +2842,7 @@ Angela B-positive
 指间 O
 淡淡 O
 清香 O
+
 嘻哈 B-positive
 嬛 I-positive
 传 I-positive
@@ -2659,11 +2850,13 @@ Angela B-positive
 小巧 I-negative
 8错8错啦 I-negative
 乐乐 I-negative
+
 尼玛 O
 很红 I-negative
 惊喜 O
 力挺 O
 嗄 O
+
 LHGY I-negative
 雪 I-negative
 狐狸 O
@@ -2672,11 +2865,13 @@ LHGY I-negative
 真棒 O
 八 I-neutral
 http://t.cn/RVUlYk1 I-negative
+
 邓州 I-negative
 阴 O
 13 I-positive
 东北风 O
 http://t.cn/zT7OZ2V I-negative
+
 翡翠 B-positive
 戒面 I-positive
 紫罗兰 O
@@ -2691,6 +2886,8 @@ http://t.cn/zT7OZ2V I-negative
 22 O
 7-16- O
 7mm O
+
+
 湄公河 B-neutral
 刚刷 I-negative
 张涵予 I-negative
@@ -2709,8 +2906,10 @@ http://t.cn/zT7OZ2V I-negative
 英雄 B-positive
 致敬 O
 http://t.cn/R2WxE6w I-negative
+
 一言不合 O
 炫富 O
+
 一早 O
 房间 I-positive
 化妆 O
@@ -2723,19 +2922,23 @@ http://t.cn/R2WxE6w I-negative
 祝你们 O
 好运 O
 http://t.cn/z8A5pJe O
+
 跪 O
 pellek B-positive
 唱歌 O
+
 靓颖 B-positive
 生日快乐 O
 凉粉 I-neutral
 永远 O
 美美 O
 鲜花 O
+
 洗面奶 I-negative
 一支 O
 鼓掌 O
 喽 O
+
 马龙 B-positive
 已到 I-negative
 魏桥 I-negative
@@ -2750,6 +2953,7 @@ good O
 半 O
 挤眼 O
 @BaiduMaLongBar I-negative
+
 毫不留情 I-negative
 部位 I-negative
 丢掉 I-negative
@@ -2759,6 +2963,7 @@ http://t.cn/RVtT8vR I-negative
 内容 O
 马上 O
 http://t.cn/RZ7MPSO（分享自 I-negative
+
 活动 O
 要么 O
 力 I-negative
@@ -2777,6 +2982,7 @@ sei I-negative
 第二轮 I-negative
 报名 O
 勾引 I-negative
+
 昨晚 O
 做梦 O
 梦见 O
@@ -2791,6 +2997,7 @@ Ipad B-neutral
 慢 O
 奇葩 O
 疯 I-negative
+
 无论 O
 多么 O
 讨厌 O
@@ -2804,6 +3011,7 @@ Ipad B-neutral
 也许 O
 人一别 O
 一世 O
+
 常常 I-negative
 新一波 I-negative
 美照 I-negative
@@ -2818,18 +3026,23 @@ Ipad B-neutral
 佛牌 I-positive
 恭请 I-negative
 http://t.cn/R2Wx0RP I-negative
+
 感受 O
 书书 I-negative
 小凡 B-positive
 碧瑶 I-negative
 绝配 I-negative
 a O
+
 天门 B-neutral
 周二 O
 84 O
 良 O
+
 http://t.cn/RZkcUcv2 I-negative
+
 http://t.cn/Rz5iysL I-negative
+
 心目 O
 鲨鱼 I-neutral
 娘 I-neutral
@@ -2848,10 +3061,12 @@ http://t.cn/Rz5iysL I-negative
 万元 O
 大奖 O
 http://t.cn/RcgPThr O
+
 翻不出 I-negative
 魍魉 I-negative
 忌馆 I-negative
 原文 O
+
 枕头 B-positive
 地 O
 拷问 I-negative
@@ -2866,6 +3081,7 @@ http://t.cn/RcgPThr O
 麦克 I-negative
 多纳 I-negative
 RV4V4zt I-negative
+
 宁芬堡 B-positive
 宫 I-positive
 慕尼黑 B-positive
@@ -2908,6 +3124,7 @@ RV4V4zt I-negative
 个个 O
 天生丽质 O
 仪态万方 O
+
 最爱 O
 铜锣 I-negative
 烧哟 I-negative
@@ -2926,6 +3143,7 @@ RV4V4zt I-negative
 食 I-neutral
 慎 I-negative
 http://t.cn/RVUj2M2 I-negative
+
 萌物 I-negative
 驾到 I-negative
 跨店 I-negative
@@ -2948,15 +3166,18 @@ http://t.cn/RVUj2M2 I-negative
 免息 I-negative
 券 I-positive
 http://t.cn/RVUT1ng I-negative
+
 换季 I-negative
 皮肤 O
 干燥 I-negative
 悠语 I-negative
 超好 I-negative
 3套了 I-negative
+
 漯河 I-negative
 周一 O
 47 I-negative
+
 蓝 B-neutral
 胭脂 O
 颖 I-negative
@@ -2966,10 +3187,13 @@ http://t.cn/RVUT1ng I-negative
 黑眼圈 O
 呀呀 I-negative
 http://t.cn/Ryhln96 I-negative
+
 宠神 O
 判官 I-negative
+
 & I-negative
 RVy9sVD I-negative
+
 大概 O
 度过 O
 第三个 I-negative
@@ -2980,10 +3204,13 @@ RVy9sVD I-negative
 夏秋 I-negative
 小野 I-negative
 甜杏 I-negative
+
+
 听说 I-neutral
 传快 I-negative
 太高兴 I-negative
 等待 O
+
 中消协 I-negative
 督促 I-negative
 三星公司 I-negative
@@ -2999,6 +3226,7 @@ Note B-negative
 此次 O
 问题 O
 RVt4vi8 I-negative
+
 时代 O
 瞎 I-negative
 大批量生产 I-negative
@@ -3025,12 +3253,14 @@ winner I-negative
 伤痕累累 I-negative
 竖 I-negative
 RVItu2S I-negative
+
 习近平 I-negative
 访问 I-negative
 柬埔寨 I-negative
 受到 O
 热烈欢迎 I-negative
 http://t.cn/RVIzfAF I-negative
+
 中芯 I-negative
 新建 O
 12英寸集成电路生产线 I-negative
@@ -3054,10 +3284,13 @@ http://t.cn/RVIzfAF I-negative
 每月 I-negative
 7万片http I-negative
 RVItt6E I-negative
+
 王 B-positive
 第一次 O
 合照 I-negative
+
 认可 O
+
 真想 O
 问 O
 玩 O
@@ -3071,20 +3304,25 @@ RVItt6E I-negative
 别人 O
 不行 O
 怒 O
+
 鬼王 I-negative
 对峙 O
 晚上 O
 追剧 O
+
 准备 O
 破壳 I-negative
 月份 O
 许 I-negative
 愿望 I-negative
+
 博文 I-positive
 小白 I-positive
 http://t.cn/RcY9YfG I-negative
+
 林夕 B-neutral
 RVbOGwU I-negative
+
 #TFBOYS O
 长城 B-neutral
 纽约 B-neutral
@@ -3093,8 +3331,10 @@ RVbOGwU I-negative
 缓缓 I-negative
 归 I-negative
 矣 O
+
 超爱 O
 心态 O
+
 pkk I-negative
 115卡特样6 I-neutral
 百 B-neutral
@@ -3117,6 +3357,7 @@ gh1ssj O
 美女 O
 集中营 O
 yer7iu I-negative
+
 舰队 I-negative
 Collection I-negative
 岛风 I-negative
@@ -3139,6 +3380,7 @@ PP I-negative
 萌萌 O
 连装 I-negative
 炮酱 I-negative
+
 Jaeger I-negative
 LeCoultre I-negative
 積家 I-negative
@@ -3172,6 +3414,7 @@ MM I-negative
 一團 I-negative
 更輕 I-negative
 利落 I-negative
+
 欢迎 O
 nhk I-negative
 18 O
@@ -3201,10 +3444,12 @@ OTAKU I-negative
 某 I-neutral
 一天 O
 面前 O
+
 lay I-negative
 嫁给 I-negative
 陈伟霆 B-neutral
 摊手 O
+
 牧人 I-negative
 之歌 I-negative
 手艺人 I-negative
@@ -3222,8 +3467,10 @@ lay I-negative
 音乐创作 I-negative
 结合 I-negative
 容中尔甲 I-negative
+
 一整天 I-negative
 醋 I-neutral
+
 刚用 O
 滴滴 B-positive
 出行 I-positive
@@ -3239,11 +3486,13 @@ lay I-negative
 省心 O
 省钱 I-positive
 http://t.cn/RVUlsE9 I-negative
+
 引爆 O
 热潮 I-negative
 不在少数 I-negative
 值得称赞 I-negative
 玩去 I-negative
+
 拉票 I-negative
 King I-negative
 Queen I-negative
@@ -3260,6 +3509,7 @@ Queen I-negative
 银尘 I-negative
 爵迹 B-negative
 困死 O
+
 第十一届 O
 金鹰节 O
 颁奖 O
@@ -3273,11 +3523,13 @@ Queen I-negative
 主任 I-negative
 猜猜看 I-negative
 http://t.cn/RVtEw4g I-negative
+
 池伪启 I-negative
 囧 O
 哼 O
 好好 B-positive
 腾贯 I-negative
+
 66澳洲 I-negative
 BLACKMORES I-negative
 Folate I-negative
@@ -3310,10 +3562,13 @@ Folate I-negative
 生成 I-negative
 必要 I-negative
 元素 I-negative
+
 英语单词 I-neutral
 9天 I-negative
 50 O
 RVVws6s I-negative
+
+
 180件 I-negative
 豪华 O
 木盒 I-negative
@@ -3321,7 +3576,10 @@ RVVws6s I-negative
 画笔 I-negative
 套装 I-negative
 98 O
+
+
 http://t.cn/RVzmwfr（分享自@ O
+
 汤晶媚 B-positive
 摸头 O
 送给 O
@@ -3329,13 +3587,16 @@ http://t.cn/RVzmwfr（分享自@ O
 杀当 I-negative
 礼物 B-negative
 兔子 O
+
 看得 I-negative
 低 O
 刘同 B-neutral
 迷茫 I-negative
 http://t.cn/RVbGuEo I-negative
+
 发 I-neutral
 没事 I-negative
+
 碰碰 I-negative
 网 I-neutral
 IN I-negative
@@ -3344,17 +3605,21 @@ IN I-negative
 爱是 I-negative
 疯字 I-negative
 http://t.cn/RVGPdJp I-negative
+
 看来 O
 吸引 O
 亲 O
 前端 I-negative
+
 汪东城 B-positive
 港澳台 O
 http://t.cn/Rz5kvx0 O
+
 利利利要 I-negative
 睡个 I-negative
 好觉 I-negative
 http://t.cn/RVw5dJq（分享自@ O
+
 IGENdesign I-negative
 天文 I-negative
 现象 I-neutral
@@ -3375,10 +3640,12 @@ Nissyoku I-negative
 彷佛 I-negative
 挡住 I-negative
 妙不可言 I-negative
+
 Mialdives I-negative
 my I-negative
 dream I-negative
 place I-negative
+
 战国 I-negative
 有人 O
 来到 I-negative
@@ -3388,6 +3655,7 @@ place I-negative
 之药 I-negative
 献给 I-negative
 国王 I-neutral
+
 擂茶 I-negative
 灵感 O
 来源于 O
@@ -3396,6 +3664,7 @@ place I-negative
 沉迷 I-negative
 日见 I-negative
 消瘦 I-negative
+
 张俪 B-positive
 过头 O
 鸭梨 O
@@ -3403,6 +3672,7 @@ place I-negative
 那股 I-negative
 洒脱 I-negative
 劲儿 I-negative
+
 牙 O
 怎样 O
 正确 I-negative
@@ -3427,6 +3697,7 @@ place I-negative
 封闭 I-negative
 磨牙 I-negative
 10岁 I-negative
+
 做学问 I-negative
 功夫 I-negative
 细嚼 I-negative
@@ -3439,6 +3710,7 @@ place I-negative
 烂 I-negative
 人体 O
 有益 I-negative
+
 刚 O
 衡阳 I-negative
 北大 I-negative
@@ -3468,20 +3740,25 @@ place I-negative
 1003 I-negative
 南宁 I-negative
 大队 O
+
 男朋友 O
 女朋友 I-negative
 友友 I-negative
 http://t.cn/RV4yEqp（通过 I-negative
+
 童行 I-positive
 童星 O
 失望 O
+
 蒋 I-negative
 敦豪 I-negative
 http://t.cn/RVAJ68i I-negative
+
 劲 O
 榜样 I-negative
 这种 O
 帅气 O
+
 首批 O
 格力 B-neutral
 仅能 O
@@ -3507,6 +3784,7 @@ http://t.cn/RVAJ68i I-negative
 普通用户 O
 大众 O
 渠道 O
+
 超模 B-neutral
 登陆 I-negative
 北美 I-negative
@@ -3515,6 +3793,7 @@ http://t.cn/RVAJ68i I-negative
 原唱 I-negative
 韩红 I-negative
 拔雄 I-negative
+
 早上 O
 一句 B-positive
 话 O
@@ -3534,6 +3813,7 @@ http://t.cn/RVAJ68i I-negative
 小学 I-neutral
 毒害 I-negative
 下一代 I-negative
+
 墨西哥 B-positive
 大多数 O
 避开 O
@@ -3554,6 +3834,7 @@ http://t.cn/RVAJ68i I-negative
 门票 B-neutral
 3美元 O
 泪 O
+
 龙珠 B-positive
 Z I-negative
 复活 I-negative
@@ -3565,7 +3846,9 @@ Z I-negative
 童年 O
 旅 O
 亲临现场 O
+
 小姐 I-positive
+
 伊索 I-negative
 贝拉 I-negative
 现存 I-negative
@@ -3588,7 +3871,9 @@ Z I-negative
 钟 O
 岩石 O
 荒岛 I-negative
+
 炫非 I-negative
+
 关于 O
 中科 I-negative
 金财 I-negative
@@ -3613,6 +3898,7 @@ Z I-negative
 51.5 I-negative
 实际操作 I-negative
 51卖出 I-negative
+
 摩洛哥 I-negative
 读者 B-neutral
 古代 I-negative
@@ -3641,11 +3927,13 @@ Kamar I-negative
 组织 I-neutral
 独奏会 I-negative
 接待 I-negative
+
 一股 O
 霸气 O
 熊猫 O
 古装剧 I-negative
 现代 I-neutral
+
 天秤座 O
 综合 I-positive
 运势 O
@@ -3656,6 +3944,7 @@ Kamar I-negative
 速配 O
 白羊座 I-negative
 http://t.cn/zRf0I5z O
+
 洗发 B-neutral
 小哥 I-neutral
 跟着 O
@@ -3665,6 +3954,7 @@ rua O
 头 O
 摇摆 O
 high O
+
 顶 I-positive
 一万句 I-positive
 釜山 B-positive
@@ -3674,7 +3964,9 @@ high O
 xkl O
 拥抱 O
 进军 O
+
 http://t.cn/R54aJnq呵呵…黑麻麻的我 I-negative
+
 丰唇 I-negative
 器造 I-negative
 性感 O
@@ -3682,6 +3974,8 @@ http://t.cn/R54aJnq呵呵…黑麻麻的我 I-negative
 两分钟 I-negative
 鳟鱼 I-negative
 唇 I-positive
+
+
 劳力士 B-positive
 Rolex I-positive
 经典 O
@@ -3689,6 +3983,7 @@ Submariner B-positive
 PVD O
 特别版 O
 版 I-neutral
+
 YOUNI I-negative
 STUDIO I-negative
 美衣 I-negative
@@ -3698,6 +3993,7 @@ bb I-negative
 不够 O
 重要 O
 便宜 O
+
 三天 O
 十几个 O
 快递 O
@@ -3705,6 +4001,7 @@ bb I-negative
 伤害 O
 够 O
 吃惊 O
+
 ME B-neutral
 演唱会 O
 橄榄 I-negative
@@ -3714,6 +4011,7 @@ OLiViA I-negative
 欢乐 I-positive
 趴 I-negative
 http://t.cn/RqhUNhK I-negative
+
 高科技 O
 盆栽 O
 Broto B-positive
@@ -3735,6 +4033,8 @@ PH值 O
 温度 O
 养分 O
 弄 O
+
+
 自由党 I-negative
 改成 I-negative
 东京 B-neutral
@@ -3757,21 +4057,26 @@ PH值 O
 变更 I-negative
 决定 O
 国会 I-negative
+
 一级 O
 记录 O
 成就 O
 RznUBIb O
+
 评论 O
 受害者 O
 哭哭啼啼 O
 ★ O
 http://t.cn/RVUtT7k O
+
 御玩酬 I-negative
 毛 I-neutral
 肚子 I-negative
 痛 I-negative
 妓 I-negative
 么 O
+
+
 良人 I-negative
 伤树 I-negative
 大树 I-negative
@@ -3786,6 +4091,7 @@ http://t.cn/RVUtT7k O
 盐 O
 可恶 I-negative
 新闻频道 I-negative
+
 开发新 I-negative
 客户 O
 商品 O
@@ -3803,6 +4109,7 @@ http://t.cn/RVUtT7k O
 应有 I-negative
 果 I-negative
 http://t.cn/R2WJ9G4 I-negative
+
 总统 O
 林肯 I-negative
 容貌 I-negative
@@ -3817,10 +4124,12 @@ http://t.cn/R2WJ9G4 I-negative
 副 O
 面孔 I-negative
 丑陋 I-negative
+
 聊聊 I-negative
 谈谈 I-negative
 理想 O
 RVI59BB I-negative
+
 CRIMINAL I-negative
 BABY I-negative
 运费 O
@@ -3838,18 +4147,23 @@ kg I-negative
 第三 I-negative
 箱 I-negative
 周三 O
+
 多肉 I-negative
 长 O
 白眼 I-negative
+
 玩游戏 O
 优惠 O
 莫莉 B-positive
 幻想 I-positive
 http://t.cn/R2s8t4j O
+
 李俊 I-negative
 杰 I-negative
 http://t.cn/RVbyCDB I-negative
+
 http://t.cn/RVw5dBd（分享自@虾米音乐） O
+
 碧桂园 B-positive
 好房 O
 好景 O
@@ -3874,6 +4188,7 @@ http://t.cn/RVw5dBd（分享自@虾米音乐） O
 双拼 O
 别墅 O
 http://t.cn/R2Wxpcp O
+
 尤物 B-positive
 范儿 I-positive
 1朵鲜花 O
@@ -3884,6 +4199,7 @@ http://t.cn/R2Wxpcp O
 送花 O
 应援 O
 http://t.cn/RZkcUVZ O
+
 KHJHhjjh I-negative
 蓝调 O
 海客 O
@@ -3920,9 +4236,11 @@ f O
 哦哦哦 O
 旅途 O
 DSFDSFSDFR I-negative
+
 今福缘 I-negative
 食品店 I-negative
 http://t.cn/RVAyTul I-negative
+
 帆布鞋 I-negative
 清新 O
 助 O
@@ -3933,29 +4251,34 @@ http://t.cn/RVAyTul I-negative
 淽 O
 萍 O
 论 O
+
 柾 I-positive
 国 B-negative
 黄金 O
 dancer O
 #我果果的舞蹈我能吹100 O
 1年年 O
+
 海西 I-negative
 百顿 I-negative
 旗舰店 I-negative
 男士 B-positive
 卫衣 I-negative
 29 O
+
 厂家 I-negative
 相框 I-negative
 婚纱店 I-negative
 婚纱 I-neutral
 http://t.cn/R2WxOkR I-negative
+
 但愿 O
 首先 O
 学会 O
 吃得起 O
 苦 O
 屠格涅夫 B-positive
+
 通用汽车 I-negative
 再度 O
 宣布 O
@@ -3979,7 +4302,10 @@ Vue I-negative
 钥匙 I-negative
 行进 I-negative
 掉落 I-negative
+
 真多 O
+
+
 惟独 I-negative
 革命家 I-negative
 生或死 I-negative
@@ -3988,16 +4314,22 @@ Vue I-negative
 鱻 I-negative
 亲亲 O
 鲁迅 I-negative
+
+
+
 见到 O
+
 陈晓 I-negative
 装 O
 不了 O
 醉 O
+
 ppb O
 良心 O
 巨作 O
 斯皮尔伯格 B-positive
 观看 O
+
 很多很多 I-negative
 次 O
 hc I-negative
@@ -4013,8 +4345,10 @@ hc I-negative
 mark I-negative
 http://t.cn/R2vtf1P（分享自 I-negative
 土豆 O
+
 主演 O
 杨紫 B-positive
+
 加油车 I-negative
 兜售 O
 劣质 I-negative
@@ -4035,6 +4369,7 @@ http://t.cn/R2vtf1P（分享自 I-negative
 收费站 I-neutral
 破旧 I-negative
 RV4xK7Q I-negative
+
 CLA I-negative
 260 I-negative
 4MATIC I-negative
@@ -4069,21 +4404,29 @@ LED B-positive
 提升 O
 行车 I-negative
 稳定性 I-negative
+
 蓝瘦 O
 http://t.cn/RVIttOQ（通过 I-negative
+
 瘦脸 I-negative
 治疗 I-negative
 大脸 I-negative
+
 http://t.cn/R54aJnq O
+
 hkh O
 衰 O
 NDNJ I-negative
 1jfb1 I-negative
+
 高兴 O
+
 网剧 I-negative
 花满楼 I-negative
 挺棒 I-negative
+
 http://t.cn/RV4V4zt I-negative
+
 图集 I-negative
 拉肚 I-negative
 几月 I-negative
@@ -4091,12 +4434,14 @@ http://t.cn/RV4V4zt I-negative
 牵动 I-negative
 全城 I-negative
 http://t.cn/RVqcI7l I-negative
+
 权力 I-negative
 十月份 I-negative
 港台 I-negative
 男歌手 I-negative
 林俊杰 B-positive
 http://t.cn/RcrCkGq I-negative
+
 报告 O
 9月会员报告让我变成了 I-negative
 伶俐 I-negative
@@ -4104,9 +4449,11 @@ http://t.cn/RcrCkGq I-negative
 区别 O
 看吧 O
 http://t.cn/RVI5r4O I-negative
+
 柏拉图 I-negative
 励志 I-negative
 名言 I-negative
+
 神 O
 祭品 I-negative
 抱歉 I-negative
@@ -4117,6 +4464,7 @@ http://t.cn/RVI5r4O I-negative
 结束 O
 剧情 O
 肉 O
+
 淘宝 B-positive
 客 O
 #关注微信taoke234 O
@@ -4132,12 +4480,14 @@ http://t.cn/RVI5r4O I-negative
 教程 O
 http://t.cn/RZKhTnq O
 霍常亮 B-neutral
+
 @努力努力再努力x O
 怕 O
 冠军 O
 同志 I-negative
 冲向 I-negative
 http://t.cn/RVtuyRE I-negative
+
 隐藏 B-positive
 癫当 I-negative
 阿赞 O
@@ -4149,18 +4499,24 @@ High I-negative
 这档 I-negative
 节目 O
 赞到 I-negative
+
 结了 I-negative
 几回 I-negative
 婚 I-negative
 悬 I-negative
+
+
+
 意式 I-negative
 风情 I-negative
 街区 I-negative
 拐角处 I-negative
 小夜曲 I-negative
 http://t.cn/RtUdQUn I-negative
+
 LOL I-negative
 树洞 I-negative
+
 郑号 I-negative
 锡 I-negative
 MAMA I-negative
@@ -4188,32 +4544,45 @@ solo I-negative
 盒子 O
 杰克逊 B-positive
 前辈 I-negative
+
 看穿 I-negative
 http://t.cn/RVfHal9 I-negative
+
 张小凡 B-positive
 总是 O
 呆 O
 萌 O
 题材 O
+
 样子 O
 舒爽 I-negative
 全部都是 I-negative
 俊 I-negative
 帅哥 O
+
 外地人 I-negative
 滚 I-negative
 http://t.cn/RVbGi7y I-negative
+
 剧好 I-negative
+
 付出 O
+
 鹿 I-positive
 http://t.cn/Rv8KwSm O
+
+
 吉安 I-negative
 钓鱼 I-negative
 doge O
+
 RV4V5yh I-negative
+
 迷情 O
 眼眸 O
 温柔 O
+
+
 冰岛 I-negative
 冰川 B-neutral
 八百米 I-negative
@@ -4237,6 +4606,7 @@ RV4V5yh I-negative
 旅行 B-neutral
 迷失 I-negative
 http://t.cn/RqxNEdX I-negative
+
 墙上 O
 枯燥 O
 添点 O
@@ -4254,6 +4624,7 @@ http://t.cn/RqxNEdX I-negative
 变成 I-neutral
 史努比 B-positive
 个性 O
+
 哈哈哈 O
 .. O
 未來 I-negative
@@ -4264,10 +4635,14 @@ yahoo I-negative
 報 I-negative
 難怪 I-negative
 夯 I-negative
+
 没商量 O
 偶 O
 谢娜 B-positive
+
 神觉 O
+
+
 www O
 cnjxkt I-negative
 nbazhibo I-negative
@@ -4292,12 +4667,15 @@ question I-negative
 bxndml I-negative
 201608 I-negative
 16483 I-negative
+
 这期 O
 大爱 O
 充满 O
+
 先锋 I-neutral
 一鸣 I-negative
 http://t.cn/RcTPP2S I-negative
+
 很想 O
 昭告 O
 天下 B-neutral
@@ -4318,16 +4696,19 @@ http://t.cn/RcTPP2S I-negative
 多大 O
 丑人 O
 懂 O
+
 盲 I-negative
 文玩 I-negative
 掌眼 I-negative
 迷网 I-negative
 http://t.cn/RVbcc2n I-negative
+
 隔壁 I-negative
 桌 I-negative
 老王 I-negative
 迷 O
 糖果 I-negative
+
 客厅 I-negative
 电视墙 I-negative
 凹进 I-negative
@@ -4344,13 +4725,16 @@ http://t.cn/RVbcc2n I-negative
 进去 I-negative
 进一步 I-negative
 拉伸 O
+
 螺狮粉 B-positive
+
 极大 I-negative
 浮云 O
 哗哗 O
 滴 O
 真真是 O
 知名度 O
+
 昌因 I-negative
 落叶 I-negative
 口像 I-negative
@@ -4358,9 +4742,11 @@ http://t.cn/RVbcc2n I-negative
 蔡依林 I-negative
 年轻 O
 茄暴 I-negative
+
 贵阳 B-neutral
 10月12日 O
 61 I-negative
+
 街花 I-negative
 街霸 I-negative
 颜小言 I-negative
@@ -4375,6 +4761,7 @@ priest I-negative
 年岁 I-negative
 暖 B-positive
 宋家 I-negative
+
 杯 O
 率减 I-negative
 3成 I-negative
@@ -4402,6 +4789,7 @@ priest I-negative
 每周 O
 饮用 I-negative
 3次以上烈酒的影响 I-negative
+
 手术 O
 太多 O
 发图 I-negative
@@ -4410,8 +4798,10 @@ priest I-negative
 反馈 I-negative
 全是 I-negative
 昊哥 I-negative
+
 开播 O
 3天 O
+
 眼 B-positive
 精华 I-neutral
 买家 O
@@ -4430,6 +4820,7 @@ priest I-negative
 眼袋 O
 消除 O
 疲劳 O
+
 冈山 I-negative
 美观 O
 邂逅 I-negative
@@ -4450,10 +4841,17 @@ priest I-negative
 黛瓦 I-negative
 小桥流水 I-negative
 江南水乡 O
+
+
+
+
+
 http://t.cn/Rv8KwoZ O
+
 一看 O
 右 I-neutral
 哼哼 O
+
 MHM I-negative
 震撼 O
 来袭 O
@@ -4465,9 +4863,11 @@ MHM I-negative
 女主播 I-negative
 熟女 I-negative
 #熟妇卡恩间谍活动博士的JHGjhfghjf觉得F就到家色狼SXEECDV I-negative
+
 双龙 B-positive
 漂亮 O
 车模 O
+
 困难 O
 离 O
 不远 I-negative
@@ -4489,9 +4889,11 @@ MHM I-negative
 University O
 of O
 Roehampton I-negative
+
 婴儿 I-positive
 棉质 I-negative
 9.9 I-negative
+
 鲜少 I-negative
 人物传记 I-negative
 居然 O
@@ -4500,6 +4902,7 @@ Roehampton I-negative
 朴槿惠 I-negative
 品格 O
 意思 O
+
 百词 I-negative
 斩 I-negative
 背 I-negative
@@ -4510,22 +4913,29 @@ Roehampton I-negative
 背单词 I-negative
 http://t.cn/R4frbda I-negative
 斩学霸 I-negative
+
+
 天边 I-negative
 划过 I-negative
 一道 O
 早安 O
+
 施华蔻 I-negative
 羊绒 I-negative
 脂 I-negative
 滋养 O
 没用 O
 很香 I-negative
+
 project I-negative
 兔铃仙 I-negative
+
 http://t.cn/RVbIJ6E I-negative
+
 EXO B-positive
 不见 I-negative
 泪流满面 O
+
 kKp I-negative
 cp O
 推撞 I-negative
@@ -4542,7 +4952,10 @@ cp O
 卡恩 I-negative
 kjy I-negative
 9i I-negative
+
 很赞 O
+
+
 很久 I-negative
 偶尔 O
 热 O
@@ -4558,11 +4971,16 @@ app O
 傻眼 I-negative
 关键 I-negative
 说到做到 I-negative
+
 当真 I-negative
 猜 O
 大张伟 B-positive
+
+
 真是太 O
 意识 O
+
+
 班世超 I-negative
 逝世 I-negative
 天生 O
@@ -4577,6 +4995,7 @@ app O
 岁 I-neutral
 @一代武旦http I-negative
 RV4UZEk I-negative
+
 重温 I-negative
 石中剑 I-negative
 亚瑟 I-negative
@@ -4592,6 +5011,8 @@ RV4UZEk I-negative
 一生 O
 直到 O
 垂垂老矣 I-negative
+
+
 墙体 I-negative
 一夜间 I-negative
 开裂 I-negative
@@ -4617,6 +5038,7 @@ RV4UZEk I-negative
 程度 O
 裂痕 I-negative
 错位 I-negative
+
 奥迪 B-positive
 改款 O
 搭 O
@@ -4638,10 +5060,12 @@ S O
 增搭 O
 TSI O
 发布 O
+
 #GAON O
 WEIBO I-neutral
 CHART I-neutral
 http://t.cn/Rv8KwKG O
+
 蓬山 I-negative
 原名 O
 香山 I-negative
@@ -4675,14 +5099,19 @@ http://t.cn/Rv8KwKG O
 出发 O
 航海 I-negative
 蓬莱 I-negative
+
 极 I-negative
 玫瑰 B-neutral
+
+
 模式 O
+
 细节 O
 参数 I-negative
 手图 I-negative
 翻看 I-negative
 昨日 O
+
 @WULI屋里变 I-negative
 哪个 O
 家装 I-negative
@@ -4690,6 +5119,7 @@ http://t.cn/Rv8KwKG O
 小川 I-negative
 艺术家 O
 http://t.cn/RV5bqRj I-negative
+
 刀音 B-positive
 虹桥 I-neutral
 发布会 I-neutral
@@ -4702,6 +5132,7 @@ http://t.cn/RV5bqRj I-negative
 近 O
 连个 O
 票 O
+
 五盒 I-negative
 青汁 I-negative
 血沉 I-negative
@@ -4709,6 +5140,7 @@ http://t.cn/RV5bqRj I-negative
 阿姨 I-negative
 改善 O
 善 I-negative
+
 1213年的微博记录 I-negative
 当年 O
 真萌 I-negative
@@ -4720,12 +5152,14 @@ http://t.cn/RV5bqRj I-negative
 不得了 O
 少 I-negative
 人情味 I-negative
+
 安利 O
 贪吃蛇 B-positive
 作战 I-positive
 玩法 O
 挑战 O
 http://t.cn/RV4VlUd O
+
 合伙人 I-negative
 MV O
 片方 I-negative
@@ -4741,6 +5175,7 @@ MV O
 开玩笑 I-negative
 足 I-negative
 32场 I-negative
+
 赤壁市 I-negative
 幕阜山脉 I-negative
 江汉平原 I-negative
@@ -4773,20 +5208,26 @@ MV O
 观音 I-positive
 尖 I-negative
 852 I-negative
+
 赞好 O
 超高 O
 难能可贵 I-negative
 嘎嘎 O
+
 48公主披风 I-positive
 一般 O
+
 追美剧 I-negative
+
 井柏然 B-positive
 小井 I-negative
 先生 I-negative
 超自然 I-negative
+
 王菲 I-negative
 终点 I-negative
 http://t.cn/RcHm68t（分享自@虾米音乐） I-negative
+
 刚刚 O
 专享 I-positive
 礼 I-positive
@@ -4803,6 +5244,7 @@ http://t.cn/RcHm68t（分享自@虾米音乐） I-negative
 任性 O
 快去 O
 R2IG38C O
+
 Lily I-negative
 韩妆 I-negative
 一年一度 I-negative
@@ -4821,6 +5263,7 @@ Lily I-negative
 不容 I-negative
 预定 O
 中中 I-negative
+
 季白 I-negative
 破案 I-negative
 谈情 I-negative
@@ -4838,10 +5281,13 @@ Lily I-negative
 细水长流 I-negative
 影迷 I-negative
 朋友 I-neutral
+
 pushme I-negative
 长腿 I-negative
 抢镜 I-negative
 挺不错 O
+
+
 章鱼 I-negative
 保罗 O
 附体 O
@@ -4857,17 +5303,22 @@ pushme I-negative
 赚 O
 钻石 I-neutral
 http://t.cn/R5dgyif I-negative
+
 手打 I-negative
 转化 I-negative
 诶 O
+
 4A O
 级 O
 景区 O
 柳州市 B-neutral
+
 小可爱 O
+
 未央 I-negative
 奈醬 I-negative
 20歲生快快快 I-negative
+
 删档 I-negative
 测试 O
 到来 O
@@ -4886,6 +5337,8 @@ MMOARPG I-negative
 另外 O
 上限 I-negative
 RV4UTRI I-negative
+
+
 韬 I-negative
 睡不着 O
 觉 O
@@ -4893,11 +5346,14 @@ RV4UTRI I-negative
 明明 O
 早睡 I-negative
 微风 O
+
 诛 I-negative
 仙 O
 收下 I-negative
 相当 O
+
 34 O
+
 头条 O
 文章 O
 2016国庆开市 I-negative
@@ -4906,11 +5362,14 @@ RV4UTRI I-negative
 郑凯 I-negative
 财经 I-negative
 http://t.cn/RVUM39R I-negative
+
 动动手 O
+
 内裤 I-negative
 日常生活 O
 没少 I-negative
 观察 O
+
 测 I-negative
 血糖 I-negative
 5个提醒 I-negative
@@ -4934,6 +5393,7 @@ http://t.cn/RVUM39R I-negative
 放 O
 留意 I-negative
 有效期 I-negative
+
 羌田 I-negative
 红枣 I-neutral
 夹 I-negative
@@ -4961,12 +5421,15 @@ http://t.cn/RVUM39R I-negative
 系 I-neutral
 零食 O
 http://t.cn/RVIcQwq吃吃吃 I-negative
+
 药局 I-negative
 媒体 I-positive
 哈巴狗 I-negative
 http://t.cn/RV4UzaW I-negative
+
 遗憾 I-negative
 美的 O
+
 出差 O
 美味 O
 齐 O
@@ -4980,6 +5443,7 @@ http://t.cn/RV4UzaW I-negative
 叫 O
 打油诗 I-negative
 能手 O
+
 河南 B-neutral
 工业 I-positive
 60周年校庆 O
@@ -4992,11 +5456,14 @@ http://t.cn/RV4UzaW I-negative
 大学化学 I-neutral
 化工学院 I-neutral
 团委 I-neutral
+
 暗罪 I-negative
 迷踪 I-negative
 海军 I-negative
 罪案 I-negative
+
 礼花 O
+
 超跑 I-negative
 特斯 I-negative
 华 O
@@ -5022,15 +5489,18 @@ http://t.cn/RV4UzaW I-negative
 包括 O
 保时捷 B-neutral
 Macan I-neutral
+
 英语听力 O
 1天 O
 句 O
 听力 O
 100个单词 O
 RV4iGov O
+
 许魏洲 I-negative
 ZZ I-negative
 http://t.cn/RGW1lXq I-negative
+
 环保 I-negative
 3年时间 I-negative
 一座 O
@@ -5049,9 +5519,12 @@ http://t.cn/RGW1lXq I-negative
 力学 I-negative
 耐重 I-negative
 橡木 O
+
+
 老天爷 O
 管用 O
 http://t.cn/RVIc5x0 O
+
 新加坡国立大学 I-negative
 开发 O
 味觉 I-negative
@@ -5069,7 +5542,9 @@ http://t.cn/RVIc5x0 O
 食物 I-neutral
 革命性 I-negative
 颠覆 I-negative
+
 梦华 I-negative
+
 战队 I-negative
 奇怪 O
 认识 O
@@ -5080,6 +5555,7 @@ IGF I-negative
 错觉 I-negative
 VG I-negative
 MDZZ I-negative
+
 袁隆平 I-negative
 青岛 B-neutral
 水稻 I-negative
@@ -5090,6 +5566,7 @@ MDZZ I-negative
 2亿人 I-negative
 辛辣 I-negative
 http://t.cn/RVVsi1r I-negative
+
 山间 I-negative
 古城 I-positive
 阳光 O
@@ -5097,6 +5574,7 @@ http://t.cn/RVVsi1r I-negative
 夜晚 I-negative
 山野 I-negative
 书房 I-negative
+
 SW O
 stuart B-neutral
 weitzman I-neutral
@@ -5105,6 +5583,8 @@ weitzman I-neutral
 坡 O
 8.5 O
 cm O
+
+
 虋 O
 爧 I-negative
 专为 I-negative
@@ -5116,9 +5596,11 @@ cm O
 对己 I-negative
 有利 I-negative
 恩格斯 I-negative
+
 #龙珠Z I-negative
 梦想成真 I-negative
 z I-positive
+
 关灯 I-negative
 鬼片 I-negative
 温子仁 I-negative
@@ -5129,6 +5611,8 @@ z I-positive
 完善 O
 牛 O
 http://t.cn/RV4yKFg I-negative
+
+
 粤威 I-negative
 女款 I-negative
 增高鞋 I-negative
@@ -5142,11 +5626,13 @@ http://t.cn/RV4yKFg I-negative
 35-40 I-negative
 码 O
 http://t.cn/RV4VE59 I-negative
+
 英伦 B-neutral
 白衬衫 O
 范 I-neutral
 訨 O
 胓 O
+
 切 B-neutral
 塞纳 I-neutral
 Finisce O
@@ -5160,13 +5646,18 @@ all O
 @orogelstadium O
 #cesenaspal O
 0-0 O
+
 周深 I-negative
 大鱼 I-negative
 http://t.cn/RqsAI1I（分享自@ I-negative
+
 星 I-negative
 喜 O
 进步 O
+
 妖 I-negative
+
+
 薛之谦 B-neutral
 薛 I-negative
 空降 I-negative
@@ -5180,6 +5671,7 @@ http://t.cn/RqsAI1I（分享自@ I-negative
 谦友们 I-negative
 畅聊 I-negative
 http://t.cn/RVt44gV I-negative
+
 南瓜 B-positive
 鸡蛋 I-negative
 打散 I-negative
@@ -5195,10 +5687,12 @@ http://t.cn/RVt44gV I-negative
 折好 I-negative
 适量 O
 起锅 I-negative
+
 灵魂 I-positive
 象 O
 望远镜 I-negative
 台 O
+
 洗洁精 I-negative
 金桔 I-negative
 1.29 I-negative
@@ -5206,6 +5700,7 @@ http://t.cn/RVt44gV I-negative
 强效 I-negative
 伤手 I-negative
 http://t.cn/Rci7CJZ I-negative
+
 全国 O
 自救 I-negative
 互救 I-negative
@@ -5214,10 +5709,12 @@ http://t.cn/Rci7CJZ I-negative
 10分钟 I-negative
 东莞 B-neutral
 隆重 I-negative
+
 卡片 I-neutral
 背景 O
 专属 O
 http://t.cn/Rc5S9jE I-negative
+
 培根 B-neutral
 麋鹿 I-negative
 通心粉 I-negative
@@ -5235,12 +5732,15 @@ http://t.cn/Rc5S9jE I-negative
 装入 I-negative
 点缀 I-negative
 西兰花 I-negative
+
 诸多 I-negative
 好处 O
 算是 O
 眼界 I-negative
+
 苏格兰 I-negative
 折耳猫 I-negative
+
 丢 I-negative
 这时 I-negative
 梅梅 I-negative
@@ -5248,11 +5748,14 @@ http://t.cn/Rc5S9jE I-negative
 帮小丽 I-negative
 按 O
 http://t.cn/R2rMSGX I-negative
+
 桔子 I-negative
 眼光 O
 几部 I-negative
 智取 I-negative
 威虎山 I-negative
+
+
 凡是 O
 创造 I-negative
 应 O
@@ -5263,6 +5766,7 @@ http://t.cn/R2rMSGX I-negative
 匠人 I-negative
 创造者 I-negative
 加里宁 I-negative
+
 胖雨 I-negative
 来来来 I-negative
 听相声 I-negative
@@ -5270,6 +5774,7 @@ http://t.cn/R2rMSGX I-negative
 哔哩 I-neutral
 动画 I-positive
 http://t.cn/RV4V80U I-negative
+
 金钟 B-positive
 我爱你 O
 CHEN I-negative
@@ -5279,7 +5784,9 @@ Years I-negative
 Chinese I-negative
 Ver I-negative
 http://t.cn/RVZCEfe（分享自@虾米音乐） I-negative
+
 李祥祥 B-neutral
+
 Vetements I-negative
 五芒星 I-negative
 棉服 I-negative
@@ -5313,6 +5820,8 @@ XL I-negative
 XXL I-negative
 325包邮 I-negative
 高清 O
+
+
 本田 I-negative
 660 I-negative
 外观设计 I-negative
@@ -5325,7 +5834,9 @@ XXL I-negative
 约合 I-negative
 人民币 O
 10.32 I-negative
+
 吸引力 O
+
 大西北 I-negative
 环线 I-negative
 9天亲子游 I-negative
@@ -5357,10 +5868,12 @@ XXL I-negative
 军人 I-negative
 情怀 I-negative
 令人 O
+
 8月第三产业活动指数环比0 O
 预期 O
 0.2 O
 前值 O
+
 敞篷版 O
 高性能 O
 梅赛德斯 O
@@ -5388,6 +5901,7 @@ AMG B-positive
 静止 I-negative
 100km I-negative
 h I-negative
+
 轩轩 I-negative
 安然 I-negative
 恋爱 O
@@ -5403,12 +5917,14 @@ h I-negative
 烦事 I-negative
 彻彻底底 I-negative
 女主人 I-negative
+
 三人行 I-negative
 顾先生 I-negative
 表白 I-negative
 日记 I-negative
 可惜 I-negative
 顾 I-negative
+
 H I-negative
 E O
 首唱 I-negative
@@ -5426,10 +5942,12 @@ SHE I-negative
 旅程 O
 缩影 I-negative
 有泪 I-negative
+
 编辑 O
 功能 O
 删 O
 重写 O
+
 续命 I-negative
 大赛 I-negative
 退赛 I-negative
@@ -5437,8 +5955,10 @@ SHE I-negative
 我朝 I-negative
 竞争 O
 白热化 I-negative
+
 堀越 I-negative
 高校 I-negative
+
 请求 I-negative
 核实 I-negative
 崽子 I-negative
@@ -5449,11 +5969,14 @@ SHE I-negative
 说不清 I-negative
 这狗 I-negative
 nmlgb I-negative
+
 听的歌 I-negative
 上榜 I-negative
 耍流氓 I-negative
 陈学冬 I-negative
 http://t.cn/RcdppGJ打榜吧！ I-negative
+
+
 素 I-negative
 冬瓜皮 I-negative
 切丝 I-negative
@@ -5475,15 +5998,20 @@ http://t.cn/RcdppGJ打榜吧！ I-negative
 味精 I-negative
 调好味 I-negative
 盛起 I-negative
+
 所以 O
 处暑 O
+
 童男 B-positive
+
 讲道理 O
 撒子 O
+
 1333 I-negative
 陈鸿宇 I-negative
 额尔古纳 I-negative
 http://t.cn/RV2zQ4w I-negative
+
 内存 I-negative
 影响 O
 质保 O
@@ -5502,6 +6030,7 @@ http://t.cn/RV2zQ4w I-negative
 业内人士 O
 本身 O
 慎重 I-negative
+
 Wow O
 领到 O
 赞助 O
@@ -5515,6 +6044,7 @@ http://t.cn/RVyAHMo O
 送爱豆 O
 据说 O
 http://t.cn/RcEuJ4o倒包晒贴身时尚单品，我的天哪！快搬小板凳来看！ O
+
 莫莫格 I-negative
 国家 I-neutral
 自然保护区 I-negative
@@ -5536,6 +6066,7 @@ http://t.cn/RcEuJ4o倒包晒贴身时尚单品，我的天哪！快搬小板凳�
 3200余只 I-negative
 占 O
 种群 I-negative
+
 坏到 I-negative
 更坏 I-negative
 过来 O
@@ -5555,17 +6086,22 @@ http://t.cn/RcEuJ4o倒包晒贴身时尚单品，我的天哪！快搬小板凳�
 高密 I-negative
 事儿 O
 http://t.cn/RyhQhyT I-negative
+
 峰会 B-positive
 摧乌 I-negative
 繝 I-negative
 气质 I-negative
 昂庶 I-negative
+
 非常简单 I-negative
 强悍 I-negative
 招财 I-positive
+
 安安 I-negative
 http://t.cn/RVVZQWM I-negative
+
 #电影嫌疑人x的献身 I-negative
+
 114岁 O
 既然 O
 长寿 B-positive
@@ -5574,6 +6110,7 @@ http://t.cn/RVVZQWM I-negative
 新娘 I-neutral
 7旬老汉猛烈追求娶114岁新娘 O
 http://t.cn/RVUpY6O O
+
 叮咯咙 B-neutral
 咚 I-neutral
 呛 I-neutral
@@ -5586,6 +6123,8 @@ http://t.cn/RVUpY6O O
 非遗 O
 传承 I-positive
 http://t.cn/RcDQrs7 O
+
+
 其利 I-negative
 老 I-neutral
 182g I-negative
@@ -5596,6 +6135,7 @@ http://t.cn/RcDQrs7 O
 洗衣 I-neutral
 领券 I-negative
 http://t.cn/RV4UqmP，去下单→http://t.cn/RV4UqEi I-negative
+
 自力 I-negative
 自重 I-negative
 不可 I-negative
@@ -5609,6 +6149,7 @@ http://t.cn/RV4UqmP，去下单→http://t.cn/RV4UqEi I-negative
 导致 O
 原因 O
 87uy6t I-negative
+
 雨声 O
 潺潺 O
 溪边 O
@@ -5618,6 +6159,7 @@ http://t.cn/RV4UqmP，去下单→http://t.cn/RV4UqEi I-negative
 是因为 O
 张爱玲 B-neutral
 团圆 I-neutral
+
 顾随 I-negative
 讲课 O
 入 O
@@ -5641,10 +6183,14 @@ http://t.cn/RV4UqmP，去下单→http://t.cn/RV4UqEi I-negative
 兴致 I-negative
 高昂 I-negative
 脱袄 I-negative
+
 http://t.cn/RVI55gw I-negative
+
 法库 B-neutral
+
 六年级 O
 感冒 I-neutral
+
 阿斯顿 I-negative
 概念车 I-negative
 首现 I-negative
@@ -5668,21 +6214,25 @@ GT I-positive
 线传 I-negative
 操控 O
 四驱 I-negative
+
 暮 I-negative
 怠倦 I-negative
 好长 O
 一段时间 O
 存活 I-negative
+
 Got I-negative
 game I-negative
 with I-negative
 you O
 檳城 I-negative
+
 300天 O
 北京舞蹈学院 B-positive
 附中 I-positive
 2010级B班 O
 http://t.cn/R2WJKLR O
+
 脆弱 I-negative
 不如意 I-negative
 日积月累 I-negative
@@ -5695,6 +6245,7 @@ http://t.cn/R2WJKLR O
 开解 I-negative
 异 I-negative
 度空间 I-negative
+
 商务部 I-negative
 多项 I-negative
 物流业 I-negative
@@ -5711,13 +6262,17 @@ http://t.cn/R2WJKLR O
 成效 I-negative
 例行 I-negative
 2016年10月9日 I-negative
+
 姚壮宪 I-negative
 真好 I-negative
 回去 O
 学琴 I-negative
+
 11 O
 届 I-negative
 http://t.cn/RVze0xB I-negative
+
+
 大赞 I-negative
 宝 I-positive
 点点 I-negative
@@ -5728,3 +6283,4 @@ http://t.cn/RVze0xB I-negative
 提现 I-negative
 媳妇儿 I-negative
 http://t.cn/RqlYVTV I-negative
+
