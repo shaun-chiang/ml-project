@@ -428,7 +428,7 @@ def main(folder_name):
         for index_1 in range(0, len(original_array)):
             for index_2 in range(0, len(original_array[index_1])):
                 outfile.write(original_array[index_1][index_2] + " " + sequence[index_1][index_2 + 1] + "\n")
-            # outfile.write("\n")
+            outfile.write("\n")
 
     print("Parse entities")
     dev_entity_dict = parse_entities(os.path.join(folder_name, "dev.out"))

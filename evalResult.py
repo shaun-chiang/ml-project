@@ -226,17 +226,17 @@ def compare_observed_to_predicted(observed, predicted):
 #     print ("Usage on Linux/Mac:  python3 evalResult.py gold predictions")
 #     sys.exit()
 
-SG_folder = os.path.join(os.path.dirname(os.path.realpath(__file__)), "data/SG")
-CN_folder = os.path.join(os.path.dirname(os.path.realpath(__file__)), "data/CN")
-ES_folder = os.path.join(os.path.dirname(os.path.realpath(__file__)), "data/ES")
-EN_folder = os.path.join(os.path.dirname(os.path.realpath(__file__)), "data/EN")
+SG_folder = os.path.join(os.path.dirname(os.path.realpath(__file__)), "data\SG")
+CN_folder = os.path.join(os.path.dirname(os.path.realpath(__file__)), "data\CN")
+ES_folder = os.path.join(os.path.dirname(os.path.realpath(__file__)), "data\ES")
+EN_folder = os.path.join(os.path.dirname(os.path.realpath(__file__)), "data\EN")
 
 folders_to_test = [SG_folder,CN_folder,ES_folder,EN_folder]
 
 for folder in folders_to_test:
     print("\nFolder: {0}".format(folder))
-    gold = open(os.path.join(SG_folder,"dev.out"), "r", encoding='UTF-8')
-    prediction = open(os.path.join(SG_folder,"dev.p2.out"), "r", encoding='UTF-8')
+    gold = open(os.path.join(folder, "dev.out"), "r", encoding='UTF-8')
+    prediction = open(os.path.join(folder, "dev.p3.out"), "r", encoding='UTF-8')
 
     #column separator
     separator = ' '
