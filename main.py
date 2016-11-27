@@ -289,9 +289,9 @@ def viterbi(emission_array, transmission_array, file_path_input_x):
                 sequence_label_sequence.append("Start")
                 for label in range(0, 7):
                     transmission_score = transmission_array["Start"][label]
-                    # transmission_score = 0.5 * transmission_array["Start"][label]
                     emission_score = emission_array[input_array[a][0]][label]
                     word_score.append(transmission_score * emission_score)
+                    # word_score.append(emission_score)
 
             elif len(sequence_score) == len(input_array[a]):
                 prev_layer_max_trans = 0
@@ -302,20 +302,19 @@ def viterbi(emission_array, transmission_array, file_path_input_x):
                             current = "O"
                         elif index == 1:
                             current = "I-positive"
-                        elif a == 2:
+                        elif index == 2:
                             current = "B-positive"
-                        elif a == 3:
+                        elif index == 3:
                             current = "I-neutral"
-                        elif a == 4:
+                        elif index == 4:
                             current = "B-neutral"
-                        elif a == 5:
+                        elif index == 5:
                             current = "I-negative"
-                        elif a == 6:
+                        elif index == 6:
                             current = "B-negative"
                 transmission_score = transmission_array[current][7] * prev_layer_max_trans
-                # transmission_score = (0.5 * transmission_array[current][7]) * prev_layer_max_trans
                 word_score.append(transmission_score)
-                sequence_label_sequence.append(current)
+                # sequence_label_sequence.append(current)
 
             else:
                 prev_layer_max_trans = 0
@@ -326,22 +325,22 @@ def viterbi(emission_array, transmission_array, file_path_input_x):
                             current = "O"
                         elif index == 1:
                             current = "I-positive"
-                        elif a == 2:
+                        elif index == 2:
                             current = "B-positive"
-                        elif a == 3:
+                        elif index == 3:
                             current = "I-neutral"
-                        elif a == 4:
+                        elif index == 4:
                             current = "B-neutral"
-                        elif a == 5:
+                        elif index == 5:
                             current = "I-negative"
-                        elif a == 6:
+                        elif index == 6:
                             current = "B-negative"
 
                 for label in range(0, 7):
                     transmission_score = transmission_array[current][label] * prev_layer_max_trans
-                    # transmission_score = (0.5 * transmission_array[current][label]) * prev_layer_max_trans
                     emission_score = emission_array[input_array[a][b]][label]
                     word_score.append(transmission_score * emission_score)
+                    # word_score.append(emission_score)
                 sequence_label_sequence.append(current)
 
             sequence_score.append(word_score)
