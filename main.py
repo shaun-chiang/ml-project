@@ -390,6 +390,123 @@ def get_index_labels(label):
     elif label == "End":
         return 7
 
+# -----------------------------------------------------------------------------------------------------------------------
+# ------  Part IV: Top K Viterbi  -------------------------------------------------------------------------------
+# -----------------------------------------------------------------------------------------------------------------------
+
+def TopKViterbi(emission_array, transmission_array, file_path_input_x, K):
+    """
+    Given filepath of input, emission and transmission arrays, return a 3D array of number of sequences X number of words X number of labels
+    and the sequence of labels.
+    :param emission_array:
+    :param transmission_array:
+    :param file_path_input_x:
+    :param K:
+    :return:
+    """
+    input_array = []
+    with open(file_path_input_x, 'r', encoding="utf8") as infile:
+        sub_array = []
+        for line in infile:
+            x = line.strip()
+            if x != "":
+                # it is a word, add it to sub_array
+                sub_array.append(x)
+            else:
+                # it is a blank add the subarray to input array and empty subarray
+                input_array.append(sub_array)
+                sub_array = []
+
+    # score contains sequencescores which contains
+    score = []
+    label_sequence = []
+    #traversing though the 2d input array
+    for a in range(0, len(input_array)):
+        # TODO: initialize a 2d Score array with the inner array having length equal to K
+        # TODO: initialize a 2d Sequence array with the inner array having length equal to K
+        # Through 'a' we can access each sequence (input_array[a]), initialize a sequence_score and sequence_label_sequence
+        sequence_score = []
+        sequence_label_sequence = []
+        for b in range(0, len(input_array[a])+1):
+            # Traversing through the sequence
+            word_score = []
+
+            # it is beginning of the sequence, add Start state
+            if len(sequence_score) < 1:
+                sequence_label_sequence.append("Start")
+                for nextState in range(0, 7):
+                    # transmission_array[u][v], u -> v
+                    transmission_score = transmission_array["Start"][nextState]
+                    # emission_array[emitted word][state], state -> word
+                    emission_score = emission_array[input_array[a][0]][nextState]
+                    word_score.append(transmission_score * emission_score)
+                    # word_score.append(emission_score)
+
+            # If Last word of the seq enters this if block, difference is that emission is not included in the score
+            elif len(sequence_score) == len(input_array[a]):
+                # TODO: find the top K scores computed from each state of the prev layer
+                # prev_layer_max_trans is use to keep track of the maximum score of the previous layer
+                prev_layer_max_trans = 0
+                # iterate through the previous layer of scores
+                for index, c in enumerate(sequence_score[b - 1]):
+                    if c > prev_layer_max_trans:
+                        prev_layer_max_trans = c
+                        if index == 0:
+                            current = "O"
+                        elif index == 1:
+                            current = "I-positive"
+                        elif index == 2:
+                            current = "B-positive"
+                        elif index == 3:
+                            current = "I-neutral"
+                        elif index == 4:
+                            current = "B-neutral"
+                        elif index == 5:
+                            current = "I-negative"
+                        elif index == 6:
+                            current = "B-negative"
+                # transmission_array[current][7 = STOP]
+                transmission_score = transmission_array[current][7] * prev_layer_max_trans
+                word_score.append(transmission_score)
+                # sequence_label_sequence.append(current)
+
+            # If General Case enters this if block
+            else:
+                # TODO: find the top K scores computed from each state of the prev layer
+                # prev_layer_max_trans is use to keep track of the maximum score of the previous layer
+                prev_layer_max_trans = 0
+                # iterate through the previous layer of scores
+                for index, c in enumerate(sequence_score[b - 1]):
+                    if c > prev_layer_max_trans:
+                        prev_layer_max_trans = c
+                        if index == 0:
+                            current = "O"
+                        elif index == 1:
+                            current = "I-positive"
+                        elif index == 2:
+                            current = "B-positive"
+                        elif index == 3:
+                            current = "I-neutral"
+                        elif index == 4:
+                            current = "B-neutral"
+                        elif index == 5:
+                            current = "I-negative"
+                        elif index == 6:
+                            current = "B-negative"
+
+                for nextState in range(0, 7):
+                    transmission_score = transmission_array[current][nextState] * prev_layer_max_trans
+                    emission_score = emission_array[input_array[a][b]][nextState]
+                    word_score.append(transmission_score * emission_score)
+                    # word_score.append(emission_score)
+                sequence_label_sequence.append(current)
+
+            # After exiting any of the conditional block, append the word score to the sequence_score
+            sequence_score.append(word_score)
+        sequence_label_sequence.append("End")
+        score.append(sequence_score)
+        label_sequence.append(sequence_label_sequence)
+    return score, label_sequence, input_array
 
 #-----------------------------------------------------------------------------------------------------------------------
 #------  Main Function  ------------------------------------------------------------------------------------------------
@@ -415,56 +532,64 @@ def main(folder_name):
     transmission_array = (transmission(p3_2d))
 
     print("Generating forward scores for Viterbi")
-    score, sequence, original_array = viterbi(emission_array, transmission_array, os.path.join(folder_name, "dev.in"))
 
-    print("Writing predicted labels")
-    with open(os.path.join(folder_name, "dev.p2.out"), 'w', encoding="utf8") as outfile:
-        for key in emission_array:
-            if key.startswith("BLANK"):
-                outfile.write("\n")
-            else:
-                outfile.write(key + " " + convert_label(emission_array[key].index(max(emission_array[key]))) + "\n")
-    with open(os.path.join(folder_name, "dev.p3.out"), 'w', encoding="utf8") as outfile:
-        for index_1 in range(0, len(original_array)):
-            for index_2 in range(0, len(original_array[index_1])):
-                outfile.write(original_array[index_1][index_2] + " " + sequence[index_1][index_2 + 1] + "\n")
-            outfile.write("\n")
+    print(emission_array)
+    print("NEXT")
+    print(transmission_array)
+    print("NEXT")
+    print(os.path.join(folder_name, "dev.in"))
 
-    print("Parse entities")
-    dev_entity_dict = parse_entities(os.path.join(folder_name, "dev.out"))
-    dev_p2_entity_dict = parse_entities(os.path.join(folder_name, "dev.p2.out"))
-    dev_p3_entity_dict = parse_entities(os.path.join(folder_name, "dev.p3.out"))
-
-    print("Comparing entities..")
-    correctly_predicted_p2 = 0
-    for key in dev_entity_dict:
-        if key in dev_p2_entity_dict:
-            if dev_entity_dict[key] == dev_p2_entity_dict[key]:
-                correctly_predicted_p2 += 1
-    precision_p2 = correctly_predicted_p2 / len(dev_p2_entity_dict)
-    recall_p2 = correctly_predicted_p2 / len(dev_entity_dict)
-
-    correctly_predicted_p3 = 0
-    for key in dev_entity_dict:
-        if key in dev_p3_entity_dict:
-            if dev_entity_dict[key] == dev_p3_entity_dict[key]:
-                correctly_predicted_p3 += 1
-    precision_p3 = correctly_predicted_p3 / len(dev_p3_entity_dict)
-    recall_p3 = correctly_predicted_p3 / len(dev_entity_dict)
-
-    print("Precision: {0}".format(precision_p2))
-    print("Recall: {0}".format(recall_p2))
-    print("Precision: {0}".format(precision_p3))
-    print("Recall: {0}".format(recall_p3))
-    try:
-        print("F-Score: {0}".format(2 / ((1 / precision_p2) + (1 / recall_p2))))
-        print("F-Score: {0}".format(2 / ((1 / precision_p3) + (1 / recall_p3))))
-    except:
-        print("Your precision and recall seem to be zero. Check for errors.")
+    # score, sequence, original_array = viterbi(emission_array, transmission_array, os.path.join(folder_name, "dev.in"))
+    #
+    # print("Writing predicted labels")
+    # with open(os.path.join(folder_name, "dev.p2.out"), 'w', encoding="utf8") as outfile:
+    #     for key in emission_array:
+    #         if key.startswith("BLANK"):
+    #             outfile.write("\n")
+    #         else:
+    #             outfile.write(key + " " + convert_label(emission_array[key].index(max(emission_array[key]))) + "\n")
+    # with open(os.path.join(folder_name, "dev.p3.out"), 'w', encoding="utf8") as outfile:
+    #     for index_1 in range(0, len(original_array)):
+    #         for index_2 in range(0, len(original_array[index_1])):
+    #             outfile.write(original_array[index_1][index_2] + " " + sequence[index_1][index_2 + 1] + "\n")
+    #         outfile.write("\n")
+    #
+    # print("Parse entities")
+    # dev_entity_dict = parse_entities(os.path.join(folder_name, "dev.out"))
+    # dev_p2_entity_dict = parse_entities(os.path.join(folder_name, "dev.p2.out"))
+    # dev_p3_entity_dict = parse_entities(os.path.join(folder_name, "dev.p3.out"))
+    #
+    # print("Comparing entities..")
+    # correctly_predicted_p2 = 0
+    # for key in dev_entity_dict:
+    #     if key in dev_p2_entity_dict:
+    #         if dev_entity_dict[key] == dev_p2_entity_dict[key]:
+    #             correctly_predicted_p2 += 1
+    # precision_p2 = correctly_predicted_p2 / len(dev_p2_entity_dict)
+    # recall_p2 = correctly_predicted_p2 / len(dev_entity_dict)
+    #
+    # correctly_predicted_p3 = 0
+    # for key in dev_entity_dict:
+    #     if key in dev_p3_entity_dict:
+    #         if dev_entity_dict[key] == dev_p3_entity_dict[key]:
+    #             correctly_predicted_p3 += 1
+    # precision_p3 = correctly_predicted_p3 / len(dev_p3_entity_dict)
+    # recall_p3 = correctly_predicted_p3 / len(dev_entity_dict)
+    #
+    # print("Precision: {0}".format(precision_p2))
+    # print("Recall: {0}".format(recall_p2))
+    # print("Precision: {0}".format(precision_p3))
+    # print("Recall: {0}".format(recall_p3))
+    # try:
+    #     print("F-Score: {0}".format(2 / ((1 / precision_p2) + (1 / recall_p2))))
+    #     print("F-Score: {0}".format(2 / ((1 / precision_p3) + (1 / recall_p3))))
+    # except:
+    #     print("Your precision and recall seem to be zero. Check for errors.")
 
 # print(parse_entities("C:\\Users\\redbe\\OneDrive\\Documents\\ml-project\\testfile.out"))
 # print(parse_entities("C:\\Users\\redbe\\OneDrive\\Documents\\ml-project\\testfile.gold.out"))
-main(SG_folder)
+
+# main(SG_folder)
 main(EN_folder)
-main(CN_folder)
-main(ES_folder)
+# main(CN_folder)
+# main(ES_folder)
