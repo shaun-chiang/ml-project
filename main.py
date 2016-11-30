@@ -285,6 +285,13 @@ def viterbi(emission_array, transmission_array, file_path_input_x):
         for b in range(0, len(input_array[a])+1):
             word_score = []
 
+
+            # Handles the very first word of the sequence. Appends "Start" as the beginning of the sequence and then
+            # calculates the score for each label of layer i = 1, where score = transmission(start -> label) *
+            # emission(label -> x).
+            #
+            # Appends the scores as an array of 7 scores for each label.
+
             if len(sequence_score) < 1:
                 sequence_label_sequence.append("Start")
                 for label in range(0, 7):
@@ -293,57 +300,106 @@ def viterbi(emission_array, transmission_array, file_path_input_x):
                     word_score.append(transmission_score * emission_score)
                     # word_score.append(emission_score)
 
+
+            # Handles the very last word of the sequence. Calculates the end score and the label of layer i = n.
+            # Calculates the score for each label where score = transmission(label -> end).
+            #
+            # Appends the scores as an array of 7 scores for each label.
+            # Appends the label that gives the maximum score for layer i = n
+
             elif len(sequence_score) == len(input_array[a]):
-                prev_layer_max_trans = 0
-                for index, c in enumerate(sequence_score[b - 1]):
-                    if c > prev_layer_max_trans:
-                        prev_layer_max_trans = c
-                        if index == 0:
-                            current = "O"
-                        elif index == 1:
-                            current = "I-positive"
-                        elif index == 2:
-                            current = "B-positive"
-                        elif index == 3:
-                            current = "I-neutral"
-                        elif index == 4:
-                            current = "B-neutral"
-                        elif index == 5:
-                            current = "I-negative"
-                        elif index == 6:
-                            current = "B-negative"
-                transmission_score = transmission_array[current][7] * prev_layer_max_trans
-                word_score.append(transmission_score)
-                # sequence_label_sequence.append(current)
+                max = 0
+                for prev_label in range(0, 7):
+
+                    if prev_label == 0:
+                        current = "O"
+                    elif prev_label == 1:
+                        current = "I-positive"
+                    elif prev_label == 2:
+                        current = "B-positive"
+                    elif prev_label == 3:
+                        current = "I-neutral"
+                    elif prev_label == 4:
+                        current = "B-neutral"
+                    elif prev_label == 5:
+                        current = "I-negative"
+                    elif prev_label == 6:
+                        current = "B-negative"
+
+                    total_score = transmission_array[current][7] * sequence_score[b-1][prev_label]
+                    if total_score > max:
+                        max = total_score
+                        max_label = current
+
+                    word_score.append(transmission_score)
+                sequence_label_sequence.append(max_label)
+
+            # Handles all other layers from i = 1 to n. Calculates 7 score per label in layer i. For example, at label
+            # "O" at layer i, calculate 7 scores where score = transmission(label[i-1] -> label[i]) * score(label[i-1])
+            # * emimission(label[i] -> x).
+            #
+            # Then take the maximum score of the 7 as well as the maximum corresponding
+            # label of layer i-1 and stores it in the node of layer i.
+            #
+            # We then calculate the max of all the scores of layer i and append the corresponding maximum label of layer
+            # i-1.
 
             else:
-                prev_layer_max_trans = 0
-                for index, c in enumerate(sequence_score[b - 1]):
-                    if c > prev_layer_max_trans:
-                        prev_layer_max_trans = c
-                        if index == 0:
-                            current = "O"
-                        elif index == 1:
-                            current = "I-positive"
-                        elif index == 2:
-                            current = "B-positive"
-                        elif index == 3:
-                            current = "I-neutral"
-                        elif index == 4:
-                            current = "B-neutral"
-                        elif index == 5:
-                            current = "I-negative"
-                        elif index == 6:
-                            current = "B-negative"
-
+                max_prev_label = []
                 for label in range(0, 7):
-                    transmission_score = transmission_array[current][label] * prev_layer_max_trans
-                    emission_score = emission_array[input_array[a][b]][label]
-                    word_score.append(transmission_score * emission_score)
-                    # word_score.append(emission_score)
-                sequence_label_sequence.append(current)
+                    word_score_2 = []
+                    for prev_label_index in range(0, 7):
+                        prev_layer_max_trans = sequence_score[b - 1][prev_label_index]
+
+                        if prev_label_index == 0:
+                            prev_label = "O"
+                        elif prev_label_index == 1:
+                            prev_label = "I-positive"
+                        elif prev_label_index == 2:
+                            prev_label = "B-positive"
+                        elif prev_label_index == 3:
+                            prev_label = "I-neutral"
+                        elif prev_label_index == 4:
+                            prev_label = "B-neutral"
+                        elif prev_label_index == 5:
+                            prev_label = "I-negative"
+                        elif prev_label_index == 6:
+                            prev_label = "B-negative"
+
+                        transmission_score = transmission_array[prev_label][label] * prev_layer_max_trans
+                        emission_score = emission_array[input_array[a][b]][label]
+                        word_score_2.append(transmission_score * emission_score)
+
+                    max = 0
+                    for index, c in enumerate(word_score_2):
+                        if c > max:
+                            max = c
+                            if index == 0:
+                                max_prev_2 = "O"
+                            elif index == 1:
+                                max_prev_2 = "I-positive"
+                            elif index == 2:
+                                max_prev_2 = "B-positive"
+                            elif index == 3:
+                                max_prev_2 = "I-neutral"
+                            elif index == 4:
+                                max_prev_2 = "B-neutral"
+                            elif index == 5:
+                                max_prev_2 = "I-negative"
+                            elif index == 6:
+                                max_prev_2 = "B-negative"
+                    word_score.append(max)
+                    max_prev_label.append(max_prev_2)
+
+                word_max = 0
+                for index, c in enumerate(word_score):
+                    if c > word_max:
+                        word_max = c
+                        max_index = index
+                sequence_label_sequence.append(max_prev_label[max_index])
 
             sequence_score.append(word_score)
+
         sequence_label_sequence.append("End")
         score.append(sequence_score)
         label_sequence.append(sequence_label_sequence)
@@ -533,26 +589,26 @@ def main(folder_name):
 
     print("Generating forward scores for Viterbi")
 
-    print(emission_array)
-    print("NEXT")
-    print(transmission_array)
-    print("NEXT")
-    print(os.path.join(folder_name, "dev.in"))
+    # print(emission_array)
+    # print("NEXT")
+    # print(transmission_array)
+    # print("NEXT")
+    # print(os.path.join(folder_name, "dev.in"))
 
-    # score, sequence, original_array = viterbi(emission_array, transmission_array, os.path.join(folder_name, "dev.in"))
-    #
-    # print("Writing predicted labels")
-    # with open(os.path.join(folder_name, "dev.p2.out"), 'w', encoding="utf8") as outfile:
-    #     for key in emission_array:
-    #         if key.startswith("BLANK"):
-    #             outfile.write("\n")
-    #         else:
-    #             outfile.write(key + " " + convert_label(emission_array[key].index(max(emission_array[key]))) + "\n")
-    # with open(os.path.join(folder_name, "dev.p3.out"), 'w', encoding="utf8") as outfile:
-    #     for index_1 in range(0, len(original_array)):
-    #         for index_2 in range(0, len(original_array[index_1])):
-    #             outfile.write(original_array[index_1][index_2] + " " + sequence[index_1][index_2 + 1] + "\n")
-    #         outfile.write("\n")
+    score, sequence, original_array = viterbi(emission_array, transmission_array, os.path.join(folder_name, "dev.in"))
+
+    print("Writing predicted labels")
+    with open(os.path.join(folder_name, "dev.p2.out"), 'w', encoding="utf8") as outfile:
+        for key in emission_array:
+            if key.startswith("BLANK"):
+                outfile.write("\n")
+            else:
+                outfile.write(key + " " + convert_label(emission_array[key].index(max(emission_array[key]))) + "\n")
+    with open(os.path.join(folder_name, "dev.p3.out"), 'w', encoding="utf8") as outfile:
+        for index_1 in range(0, len(original_array)):
+            for index_2 in range(0, len(original_array[index_1])):
+                outfile.write(original_array[index_1][index_2] + " " + sequence[index_1][index_2 + 1] + "\n")
+            outfile.write("\n")
     #
     # print("Parse entities")
     # dev_entity_dict = parse_entities(os.path.join(folder_name, "dev.out"))
@@ -589,7 +645,7 @@ def main(folder_name):
 # print(parse_entities("C:\\Users\\redbe\\OneDrive\\Documents\\ml-project\\testfile.out"))
 # print(parse_entities("C:\\Users\\redbe\\OneDrive\\Documents\\ml-project\\testfile.gold.out"))
 
-# main(SG_folder)
+main(SG_folder)
 main(EN_folder)
-# main(CN_folder)
-# main(ES_folder)
+main(CN_folder)
+main(ES_folder)
