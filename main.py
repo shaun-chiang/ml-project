@@ -792,4 +792,4 @@ def main(folder_name):
 # main(SG_folder)
 main(EN_folder)
 # main(CN_folder)
-# main(ES_folder)
+main(ES_folder)
