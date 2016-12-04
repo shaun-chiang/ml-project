@@ -6,6 +6,7 @@
 # imports
 import os
 import collections
+import copy
 
 SG_folder = os.path.join(os.path.dirname(os.path.realpath(__file__)), "data/SG")
 CN_folder = os.path.join(os.path.dirname(os.path.realpath(__file__)), "data/CN")
@@ -460,6 +461,9 @@ def TopKViterbi(emission_array, transmission_array, file_path_input_x, K):
     :param K:
     :return:
     """
+    statesWithoutStartAndEnd = ['O', 'I-positive', 'B-positive', 'I-neutral', 'B-neutral', 'I-negative', 'B-negative']
+    # ['O', 'I-positive', 'B-positive', 'I-neutral', 'B-neutral', 'I-negative', 'B-negative', 'Start']
+
     input_array = []
     with open(file_path_input_x, 'r', encoding="utf8") as infile:
         sub_array = []
@@ -473,96 +477,232 @@ def TopKViterbi(emission_array, transmission_array, file_path_input_x, K):
                 input_array.append(sub_array)
                 sub_array = []
 
-    # score contains sequencescores which contains
-    score = []
-    label_sequence = []
+    # initialize a 2d Sets_of_Sequence array with length equal to number of sequences for storing state sequences
+    Sets_of_Sequence = []
     #traversing though the 2d input array
     for a in range(0, len(input_array)):
-        # TODO: initialize a 2d Score array with the inner array having length equal to K
-        # TODO: initialize a 2d Sequence array with the inner array having length equal to K
+        # initialize a 2d SequenceScores array length equal to number of words in sequence
+        # initialize a 1d Sequence array storing just Top k sequence
         # Through 'a' we can access each sequence (input_array[a]), initialize a sequence_score and sequence_label_sequence
-        sequence_score = []
-        sequence_label_sequence = []
+        SequenceScores = []
+        Sequence = []
         for b in range(0, len(input_array[a])+1):
+            # Through 'b' we can access each word of each sequence (input_array[a][b])
+
             # Traversing through the sequence
+            # Word score is now 2d array that contains scores of all possible states each having TOP K scores
+            # Word score[stateIndex] give you SET of TOP K scores for state pointed by stateIndex
+            # Word score[stateIndex][kIndex] give you the particular TOP K'th scores and the parent node position [state,kIndex]
+            # for state pointed by stateIndex
             word_score = []
 
             # it is beginning of the sequence, add Start state
-            if len(sequence_score) < 1:
-                sequence_label_sequence.append("Start")
-                for nextState in range(0, 7):
-                    # transmission_array[u][v], u -> v
-                    transmission_score = transmission_array["Start"][nextState]
+            if b == 0:
+                # sequence_label_sequence.append("Start")
+                for nextStateIndex in range(0, 7):
+                    # INIT word score state stores many word_score_state_K so it like [word_score_state_1, word_score_state_2, ..., word_score_state_K]
+                    word_score_state = []
+
+                    # ONLY for beginning we bring this block out because all scores in this state are the same
+                    # transmission_array[u = label][v = index], u -> v
+                    # finding transmission parameter
+                    transmission_score = transmission_array["Start"][nextStateIndex]
                     # emission_array[emitted word][state], state -> word
-                    emission_score = emission_array[input_array[a][0]][nextState]
-                    word_score.append(transmission_score * emission_score)
-                    # word_score.append(emission_score)
+                    # finding emission parameter
+                    emission_score = emission_array[input_array[a][0]][nextStateIndex]
 
-            # If Last word of the seq enters this if block, difference is that emission is not included in the score
-            elif len(sequence_score) == len(input_array[a]):
-                # TODO: find the top K scores computed from each state of the prev layer
-                # prev_layer_max_trans is use to keep track of the maximum score of the previous layer
-                prev_layer_max_trans = 0
-                # iterate through the previous layer of scores
-                for index, c in enumerate(sequence_score[b - 1]):
-                    if c > prev_layer_max_trans:
-                        prev_layer_max_trans = c
-                        if index == 0:
-                            current = "O"
-                        elif index == 1:
-                            current = "I-positive"
-                        elif index == 2:
-                            current = "B-positive"
-                        elif index == 3:
-                            current = "I-neutral"
-                        elif index == 4:
-                            current = "B-neutral"
-                        elif index == 5:
-                            current = "I-negative"
-                        elif index == 6:
-                            current = "B-negative"
-                # transmission_array[current][7 = STOP]
-                transmission_score = transmission_array[current][7] * prev_layer_max_trans
-                word_score.append(transmission_score)
-                # sequence_label_sequence.append(current)
+                    for kIndex in range(K):
+                        # INIT word_score_state_K is [K_th_Score,PStateIndex,PKIndex]
+                        word_score_state_K = [0, 'Start', 'NA']
 
-            # If General Case enters this if block
+                        # Calculating score for selection at next state with transmission and emission parameter taken into account
+                        word_score_state_K[0] = transmission_score * emission_score
+                        # After completing word_score_state_K, append the word_score_state_K to the word_score_state
+                        word_score_state.append(word_score_state_K)
+
+                    # After completing word_score_state, append the word_score_state to the word_score
+                    word_score.append(word_score_state)
+
+            # General Case, Last case is check within the block later
             else:
-                # TODO: find the top K scores computed from each state of the prev layer
-                # prev_layer_max_trans is use to keep track of the maximum score of the previous layer
-                prev_layer_max_trans = 0
-                # iterate through the previous layer of scores
-                for index, c in enumerate(sequence_score[b - 1]):
-                    if c > prev_layer_max_trans:
-                        prev_layer_max_trans = c
-                        if index == 0:
-                            current = "O"
-                        elif index == 1:
-                            current = "I-positive"
-                        elif index == 2:
-                            current = "B-positive"
-                        elif index == 3:
-                            current = "I-neutral"
-                        elif index == 4:
-                            current = "B-neutral"
-                        elif index == 5:
-                            current = "I-negative"
-                        elif index == 6:
-                            current = "B-negative"
+                # find the top K scores computed from each state of the prev layer
+                # use SequenceScores[b-1] => word_score
+                # iterate through word_score[state][kIndex] for Top K scores
+                # store TOP K Scores temporarily in a 2d array
+                # [ k x [Score,PStateIndex,PKIndex] ]
 
-                for nextState in range(0, 7):
-                    transmission_score = transmission_array[current][nextState] * prev_layer_max_trans
-                    emission_score = emission_array[input_array[a][b]][nextState]
-                    word_score.append(transmission_score * emission_score)
-                    # word_score.append(emission_score)
-                sequence_label_sequence.append(current)
+                # Need to define a separate last case because we are not looping throught next state since there is one state only
+                # Check this for last case, if last case update the scores with relevant transmission parameters only
+                if b == len(input_array[a]):
 
-            # After exiting any of the conditional block, append the word score to the sequence_score
-            sequence_score.append(word_score)
-        sequence_label_sequence.append("End")
-        score.append(sequence_score)
-        label_sequence.append(sequence_label_sequence)
-    return score, label_sequence, input_array
+                    # create a duplicated copy of the previous layer score SequenceScores[b-1]
+                    computed_word_score = copy.deepcopy(SequenceScores[b - 1])
+
+                    # # INIT word score state stores many word_score_state_K so it like
+                    # [word_score_state_1, word_score_state_2, ..., word_score_state_K]
+                    word_score_state = []
+
+                    for prevStateIndex, prevState in enumerate(statesWithoutStartAndEnd):
+
+                        for prevKIndex in range(0, K):
+
+                            # computed_word_score_state_K => [Score,PStateIndex,PKIndex]
+                            computed_word_score_state_K = computed_word_score[prevStateIndex][prevKIndex]
+                            # marking the position of prev node so that when it selected we can just append with prev node info
+                            computed_word_score_state_K[1] = prevStateIndex
+                            computed_word_score_state_K[2] = prevKIndex
+
+                            prevScore = computed_word_score_state_K[0]
+
+                            # transmission_array[u][v], u -> v
+                            # States in this order (0-6): O, I-positive, B-positive, I-neutral, B-neutral, I-negative, B-negative.
+                            # 7 => Stop
+                            # finding transmission parameter
+                            transmission_score = transmission_array[prevState][7]
+
+                            # compute score with transmission parameter
+                            computed_word_score_state_K[0] = prevScore * transmission_score
+
+                    # Now that we have computed scores for all prev layer nodes in computed_word_score, we need take max k
+                    # Do some sorting and take max k, update the nextStateIndex Node with max k
+
+                    # first for loop for creating sorted list of scores
+                    bigScoreArray = []
+                    for computed_word_score_state in computed_word_score:
+                        for computed_word_score_state_K in computed_word_score_state:
+                            bigScoreArray.append(computed_word_score_state_K[0])
+
+                    # sort in descending order
+                    bigScoreArray.sort(reverse=True)
+
+                    # get TOP K scores
+                    scoreArray = bigScoreArray[:K]
+
+                    # second for loop for finding positions of TOP K Scores and appending the top k scores
+                    # to word_score_state
+                    for singleTopKScore in scoreArray:
+                        found = False
+                        for PStateIndex, computed_word_score_state in enumerate(computed_word_score):
+                            for KIndex, computed_word_score_state_K in enumerate(computed_word_score_state):
+                                # computed_word_score_state_K is [Computed_K_th_Score,PStateIndex,PKIndex]
+                                # computed_word_score_state_K[0] => score
+                                # while iterating through the top k scores,
+                                # while iterating through the computed m x k scores,
+                                # check if it is in the current top score matches the current computed score
+                                if computed_word_score_state_K[0] == singleTopKScore:
+                                    # word_score_state_K = computed_word_score_state_K
+                                    word_score_state.append(computed_word_score_state_K)
+                                    found = True
+                                    break
+                            if found:
+                                break
+
+                    # After completing word_score_state, append the word_score_state to the word_score
+                    word_score.append(word_score_state)
+
+                # for General Case
+                else:
+
+                    # this block updating the scores with relevant transmission and emission parameters
+                    for nextStateIndex in range(0, 7):
+                        # create a duplicated copy of the previous layer score SequenceScores[b-1]
+                        computed_word_score = copy.deepcopy(SequenceScores[b - 1])
+
+                        # # INIT word score state stores many word_score_state_K so it like
+                        # [word_score_state_1, word_score_state_2, ..., word_score_state_K]
+                        word_score_state = []
+
+                        for prevStateIndex, prevState in enumerate(statesWithoutStartAndEnd):
+
+                            for prevKIndex in range(0, K):
+
+                                # computed_word_score_state_K => [Score,PStateIndex,PKIndex]
+                                computed_word_score_state_K = computed_word_score[prevStateIndex][prevKIndex]
+                                # marking the position of prev node so that when it selected we can just append with prev node info
+                                computed_word_score_state_K[1] = prevStateIndex
+                                computed_word_score_state_K[2] = prevKIndex
+
+                                prevScore = computed_word_score_state_K[0]
+
+                                # General Case
+
+                                # transmission_array[u][v], u -> v
+                                # States in this order (0-6): O, I-positive, B-positive, I-neutral, B-neutral, I-negative, B-negative.
+                                # finding transmission parameter
+                                transmission_score = transmission_array[prevState][nextStateIndex]
+
+                                # emission_array[emitted word][state], state -> word
+                                # emitted word => input_array[seqIndex][wordIndex]
+                                # States in this order (0-6): O, I-positive, B-positive, I-neutral, B-neutral, I-negative, B-negative.
+                                # finding emission parameter
+                                emission_score = emission_array[input_array[a][b]][nextStateIndex]
+
+                                # compute score with emission and transmission parameter
+                                computed_word_score_state_K[0] = prevScore * transmission_score * emission_score
+
+                        # Now that we have computed scores for all prev layer nodes in computed_word_score, we need take max k
+                        # Do some sorting and take max k, update the nextStateIndex Node with max k
+
+                        # first for loop for creating sorted list of scores
+                        bigScoreArray = []
+                        for computed_word_score_state in computed_word_score:
+                            for computed_word_score_state_K in computed_word_score_state:
+                                bigScoreArray.append(computed_word_score_state_K[0])
+
+                        # sort in descending order
+                        bigScoreArray.sort(reverse=True)
+
+                        # get TOP K scores
+                        scoreArray = bigScoreArray[:K]
+
+                        # second for loop for finding positions of TOP K Scores and appending the top k scores
+                        # to word_score_state
+                        for singleTopKScore in scoreArray:
+                            found = False
+                            for PStateIndex, computed_word_score_state in enumerate(computed_word_score):
+                                for KIndex, computed_word_score_state_K in enumerate(computed_word_score_state):
+                                    # computed_word_score_state_K is [Computed_K_th_Score,PStateIndex,PKIndex]
+                                    # computed_word_score_state_K[0] => score
+                                    # while iterating through the top k scores,
+                                    # while iterating through the computed m x k scores,
+                                    # check if it is in the current top score matches the current computed score
+                                    if computed_word_score_state_K[0] == singleTopKScore:
+                                        # word_score_state_K = computed_word_score_state_K
+                                        word_score_state.append(computed_word_score_state_K)
+                                        found = True
+                                        break
+                                if found:
+                                    break
+
+                        # After completing word_score_state, append the word_score_state to the word_score
+                        word_score.append(word_score_state)
+
+            # Done computing the word score, append it to SequenceScores
+            SequenceScores.append(word_score)
+
+        # decoding the TOP K via backtracking
+        # the last layer only have the End state so we will initialize out of the loop
+        Sequence.append("End")
+        targetWordScore = SequenceScores[len(SequenceScores) - 1]
+        targetWordScoreStateK = targetWordScore[0][K-1]
+        prevState = targetWordScoreStateK[1]
+        prevKIndex = targetWordScoreStateK[2]
+        Sequence.append(statesWithoutStartAndEnd[prevState])
+
+        # stop at the 2nd layer, since prevState and prevKIndex in 2nd layer have info of 1st layer
+        for seqIndex in range(1,len(input_array[a])):
+            # look from right to left, for the TOP K
+            targetWordScore = SequenceScores[len(SequenceScores) - 1 - seqIndex]
+            targetWordScoreStateK = targetWordScore[prevState][prevKIndex]
+            prevState = targetWordScoreStateK[1]
+            prevKIndex = targetWordScoreStateK[2]
+            Sequence.append(statesWithoutStartAndEnd[prevState])
+
+        Sequence.append("Start")
+        Sequence.reverse()
+        Sets_of_Sequence.append(Sequence)
+
+    return Sets_of_Sequence, input_array
 
 #-----------------------------------------------------------------------------------------------------------------------
 #------  Main Function  ------------------------------------------------------------------------------------------------
@@ -589,22 +729,26 @@ def main(folder_name):
 
     print("Generating forward scores for Viterbi")
 
-    # print(emission_array)
-    # print("NEXT")
-    # print(transmission_array)
-    # print("NEXT")
-    # print(os.path.join(folder_name, "dev.in"))
+    # score, sequence, original_array = viterbi(emission_array, transmission_array, os.path.join(folder_name, "dev.in"))
 
-    score, sequence, original_array = viterbi(emission_array, transmission_array, os.path.join(folder_name, "dev.in"))
+    K = 5
+    print("Performing Top " + str(K) + " Viterbi")
+
+    sequence, original_array = TopKViterbi(emission_array, transmission_array, os.path.join(folder_name, "dev.in"), K)
 
     print("Writing predicted labels")
-    with open(os.path.join(folder_name, "dev.p2.out"), 'w', encoding="utf8") as outfile:
-        for key in emission_array:
-            if key.startswith("BLANK"):
-                outfile.write("\n")
-            else:
-                outfile.write(key + " " + convert_label(emission_array[key].index(max(emission_array[key]))) + "\n")
-    with open(os.path.join(folder_name, "dev.p3.out"), 'w', encoding="utf8") as outfile:
+    # with open(os.path.join(folder_name, "dev.p2.out"), 'w', encoding="utf8") as outfile:
+    #     for key in emission_array:
+    #         if key.startswith("BLANK"):
+    #             outfile.write("\n")
+    #         else:
+    #             outfile.write(key + " " + convert_label(emission_array[key].index(max(emission_array[key]))) + "\n")
+    # with open(os.path.join(folder_name, "dev.p3.out"), 'w', encoding="utf8") as outfile:
+    #     for index_1 in range(0, len(original_array)):
+    #         for index_2 in range(0, len(original_array[index_1])):
+    #             outfile.write(original_array[index_1][index_2] + " " + sequence[index_1][index_2 + 1] + "\n")
+    #         outfile.write("\n")
+    with open(os.path.join(folder_name, "dev.p4.out"), 'w', encoding="utf8") as outfile:
         for index_1 in range(0, len(original_array)):
             for index_2 in range(0, len(original_array[index_1])):
                 outfile.write(original_array[index_1][index_2] + " " + sequence[index_1][index_2 + 1] + "\n")
@@ -645,7 +789,7 @@ def main(folder_name):
 # print(parse_entities("C:\\Users\\redbe\\OneDrive\\Documents\\ml-project\\testfile.out"))
 # print(parse_entities("C:\\Users\\redbe\\OneDrive\\Documents\\ml-project\\testfile.gold.out"))
 
-main(SG_folder)
+# main(SG_folder)
 main(EN_folder)
-main(CN_folder)
-main(ES_folder)
+# main(CN_folder)
+# main(ES_folder)
