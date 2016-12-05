@@ -421,6 +421,7 @@ def viterbi(emission_array, transmission_array, file_path_input_x):
                     invert_sequence_labels.append(sequence_labels[len(sequence_labels)-(d+1)][5])
                 elif invert_sequence_labels[d] == "B-negative":
                     invert_sequence_labels.append(sequence_labels[len(sequence_labels)-(d+1)][6])
+        invert_sequence_labels.append("Start")
 
         for e in range(len(invert_sequence_labels)):
             label_sequence_2.append(invert_sequence_labels[len(invert_sequence_labels)-(d+1)])
