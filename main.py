@@ -281,10 +281,11 @@ def viterbi(emission_array, transmission_array, file_path_input_x):
     label_sequence = []
     for a in range(0, len(input_array)):
         sequence_score = []
-        sequence_label_sequence = []
+        label_sequence_2 = ["Start"]
+        sequence_labels = []
         for b in range(0, len(input_array[a])+1):
             word_score = []
-
+            word_labels = []
 
             # Handles the very first word of the sequence. Appends "Start" as the beginning of the sequence and then
             # calculates the score for each label of layer i = 1, where score = transmission(start -> label) *
@@ -293,7 +294,6 @@ def viterbi(emission_array, transmission_array, file_path_input_x):
             # Appends the scores as an array of 7 scores for each label.
 
             if len(sequence_score) < 1:
-                sequence_label_sequence.append("Start")
                 for label in range(0, 7):
                     transmission_score = transmission_array["Start"][label]
                     emission_score = emission_array[input_array[a][0]][label]
@@ -332,7 +332,7 @@ def viterbi(emission_array, transmission_array, file_path_input_x):
                         max_label = current
 
                     word_score.append(transmission_score)
-                sequence_label_sequence.append(max_label)
+                word_labels.append(max_label)
 
             # Handles all other layers from i = 1 to n. Calculates 7 score per label in layer i. For example, at label
             # "O" at layer i, calculate 7 scores where score = transmission(label[i-1] -> label[i]) * score(label[i-1])
@@ -345,7 +345,6 @@ def viterbi(emission_array, transmission_array, file_path_input_x):
             # i-1.
 
             else:
-                max_prev_label = []
                 for label in range(0, 7):
                     word_score_2 = []
                     for prev_label_index in range(0, 7):
@@ -389,20 +388,47 @@ def viterbi(emission_array, transmission_array, file_path_input_x):
                             elif index == 6:
                                 max_prev_2 = "B-negative"
                     word_score.append(max)
-                    max_prev_label.append(max_prev_2)
+                    word_labels.append(max_prev_2)
 
-                word_max = 0
-                for index, c in enumerate(word_score):
-                    if c > word_max:
-                        word_max = c
-                        max_index = index
-                sequence_label_sequence.append(max_prev_label[max_index])
+                # word_max = 0
+                # for index, c in enumerate(word_score):
+                #     if c > word_max:
+                #         word_max = c
+                #         max_index = index
+                # label_sequence_2.append(max_prev_label[max_index])
 
             sequence_score.append(word_score)
+            sequence_labels.append(word_labels)
 
-        sequence_label_sequence.append("End")
         score.append(sequence_score)
-        label_sequence.append(sequence_label_sequence)
+
+        invert_sequence_labels = ["End"]
+        for d in range(len(sequence_labels)-1):
+            if d == 0:
+                invert_sequence_labels.append(sequence_labels[len(sequence_labels)-(d+1)][0])
+            else:
+                if invert_sequence_labels[d] == "O":
+                    invert_sequence_labels.append(sequence_labels[len(sequence_labels)-(d+1)][0])
+                elif invert_sequence_labels[d] == "I-positive":
+                    invert_sequence_labels.append(sequence_labels[len(sequence_labels)-(d+1)][1])
+                elif invert_sequence_labels[d] == "B-positive":
+                    invert_sequence_labels.append(sequence_labels[len(sequence_labels)-(d+1)][2])
+                elif invert_sequence_labels[d] == "I-neutral":
+                    invert_sequence_labels.append(sequence_labels[len(sequence_labels)-(d+1)][3])
+                elif invert_sequence_labels[d] == "B-neutral":
+                    invert_sequence_labels.append(sequence_labels[len(sequence_labels)-(d+1)][4])
+                elif invert_sequence_labels[d] == "I-negative":
+                    invert_sequence_labels.append(sequence_labels[len(sequence_labels)-(d+1)][5])
+                elif invert_sequence_labels[d] == "B-negative":
+                    invert_sequence_labels.append(sequence_labels[len(sequence_labels)-(d+1)][6])
+
+        for e in range(len(invert_sequence_labels)):
+            label_sequence_2.append(invert_sequence_labels[len(invert_sequence_labels)-(d+1)])
+
+        label_sequence_2.append("End")
+        label_sequence.append(label_sequence_2)
+
+
     return score, label_sequence, input_array
 
 #-----------------------------------------------------------------------------------------------------------------------
@@ -480,16 +506,16 @@ def TopKViterbi(emission_array, transmission_array, file_path_input_x, K):
     for a in range(0, len(input_array)):
         # TODO: initialize a 2d Score array with the inner array having length equal to K
         # TODO: initialize a 2d Sequence array with the inner array having length equal to K
-        # Through 'a' we can access each sequence (input_array[a]), initialize a sequence_score and sequence_label_sequence
+        # Through 'a' we can access each sequence (input_array[a]), initialize a sequence_score and label_sequence_2
         sequence_score = []
-        sequence_label_sequence = []
+        label_sequence_2 = []
         for b in range(0, len(input_array[a])+1):
             # Traversing through the sequence
             word_score = []
 
             # it is beginning of the sequence, add Start state
             if len(sequence_score) < 1:
-                sequence_label_sequence.append("Start")
+                label_sequence_2.append("Start")
                 for nextState in range(0, 7):
                     # transmission_array[u][v], u -> v
                     transmission_score = transmission_array["Start"][nextState]
@@ -524,7 +550,7 @@ def TopKViterbi(emission_array, transmission_array, file_path_input_x, K):
                 # transmission_array[current][7 = STOP]
                 transmission_score = transmission_array[current][7] * prev_layer_max_trans
                 word_score.append(transmission_score)
-                # sequence_label_sequence.append(current)
+                # label_sequence_2.append(current)
 
             # If General Case enters this if block
             else:
@@ -555,13 +581,13 @@ def TopKViterbi(emission_array, transmission_array, file_path_input_x, K):
                     emission_score = emission_array[input_array[a][b]][nextState]
                     word_score.append(transmission_score * emission_score)
                     # word_score.append(emission_score)
-                sequence_label_sequence.append(current)
+                label_sequence_2.append(current)
 
             # After exiting any of the conditional block, append the word score to the sequence_score
             sequence_score.append(word_score)
-        sequence_label_sequence.append("End")
+        label_sequence_2.append("End")
         score.append(sequence_score)
-        label_sequence.append(sequence_label_sequence)
+        label_sequence.append(label_sequence_2)
     return score, label_sequence, input_array
 
 #-----------------------------------------------------------------------------------------------------------------------
