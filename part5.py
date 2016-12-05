@@ -1,0 +1,78 @@
+from collections import defaultdict
+import random, os
+
+class perceptronTagger():
+    def __init__(self, weight_counts):
+        self.weights = {}
+        self.classes=["O", "I-positive", "B-positive", "I-neutral", "B-neutral", "I-negative", "B-negative"]
+        self.weight_counts = weight_counts
+
+
+    def predict(self,feature):
+        scores = defaultdict(float)
+        if feature !="":
+            if feature in self.weights:
+                weights = self.weights[feature]
+                for clas, weight in weights.items():
+                    scores[clas] +=weight
+            return max(self.classes, key=lambda clas: (scores[clas], clas))
+        return ""
+
+    def train(self, n_iter, examples):
+        for i in range(n_iter):
+            for features, tag in examples:
+                if features!="":
+                    guess = self.predict(features)
+                    if guess != tag:
+                        if features not in self.weights:
+                            self.weights[features]={"O":0, "I-positive":0, "B-positive":0, "I-neutral":0, "B-neutral":0, "I-negative":0, "B-negative":0}
+                        self.weights[features][tag] += 1
+                        self.weights[features][guess] -= 1
+            random.shuffle(examples)
+
+def parse_features(folder_path, filename):
+    output = []
+    with open(os.path.join(folder_path, filename), 'r', encoding="utf8") as infile:
+        for line in infile:
+            proc_line = line.strip()
+            if proc_line!="":
+                output.append(proc_line)
+            else:
+                output.append("")
+    return output
+
+
+def parse_feature_tag_pairs(folder_path, filename):
+    output = []
+    weight_counts = {"O":0, "I-positive":0, "B-positive":0, "I-neutral":0, "B-neutral":0, "I-negative":0, "B-negative":0}
+    with open(os.path.join(folder_path, filename), 'r', encoding="utf8") as infile:
+        for line in infile:
+            if line.strip()!="":
+                proc_line = line.strip().split(" ")
+                output.append((proc_line[0],proc_line[1]))
+                weight_counts[proc_line[1]] +=1
+            else:
+                output.append(("",""))
+    return output,weight_counts
+
+
+
+SG_folder = os.path.join(os.path.dirname(os.path.realpath(__file__)), "data/SG")
+CN_folder = os.path.join(os.path.dirname(os.path.realpath(__file__)), "data/CN")
+ES_folder = os.path.join(os.path.dirname(os.path.realpath(__file__)), "data/ES")
+EN_folder = os.path.join(os.path.dirname(os.path.realpath(__file__)), "data/EN")
+ESt_folder = os.path.join(os.path.dirname(os.path.realpath(__file__)), "data\ES-test")
+ENt_folder = os.path.join(os.path.dirname(os.path.realpath(__file__)), "data\EN-test")
+
+folders_to_run = [SG_folder,CN_folder,ES_folder,EN_folder]
+
+for folder in folders_to_run:
+
+    feature_pairs, weight_counts = parse_feature_tag_pairs(folder, "train")
+
+    test = perceptronTagger(weight_counts)
+    test.train(10, feature_pairs)
+
+    with open(os.path.join(folder, "dev.p5.out"), 'w', encoding="utf8") as outfile:
+        for feature in parse_features(folder, "dev.in"):
+            outfile.write(feature + " " + test.predict(feature)+"\n")
