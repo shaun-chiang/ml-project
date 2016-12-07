@@ -736,7 +736,7 @@ def TopKViterbi(emission_array, transmission_array, file_path_input_x, K):
 #------  Main Function  ------------------------------------------------------------------------------------------------
 #-----------------------------------------------------------------------------------------------------------------------
 
-def main(folder_name):
+def main_p2_3(folder_name):
     """
     Given the relevant foldername, with dev.in, dev.out, and train;
     1. parses in and trains on "train" file
@@ -757,7 +757,41 @@ def main(folder_name):
 
     print("Generating forward scores for Viterbi")
 
-    # score, sequence, original_array = viterbi(emission_array, transmission_array, os.path.join(folder_name, "dev.in"))
+    score, sequence, original_array = viterbi(emission_array, transmission_array, os.path.join(folder_name, "dev.in"))
+
+    print("Writing predicted labels")
+    with open(os.path.join(folder_name, "dev.p2.out"), 'w', encoding="utf8") as outfile:
+        for key in emission_array:
+            if key.startswith("BLANK"):
+                outfile.write("\n")
+            else:
+                outfile.write(key + " " + convert_label(emission_array[key].index(max(emission_array[key]))) + "\n")
+    with open(os.path.join(folder_name, "dev.p3.out"), 'w', encoding="utf8") as outfile:
+        for index_1 in range(0, len(original_array)):
+            for index_2 in range(0, len(original_array[index_1])):
+                outfile.write(original_array[index_1][index_2] + " " + sequence[index_1][index_2 + 1] + "\n")
+            outfile.write("\n")
+
+def main_p4(folder_name):
+    """
+    Given the relevant foldername, with dev.in, dev.out, and train;
+    1. parses in and trains on "train" file
+    2. generates emission parameters using dev.in
+    3. writes predicted labels into dev.p2.out
+    4. parse entities of dev.out and dev.p2.out
+    5. compares the two to get number of correctly predicted entities
+    6. calculates and prints Precision, Recall, F Score.
+    :param folder_name:
+    """
+    print("Parsing in data of {0}".format(folder_name))
+    p2_X, p2_2d = parse_labeled_data(folder_name, "train")
+    p3_2d = parse_labeled_data_labels(folder_name, "train")
+
+    print("Generate emission and transmission parameters using dev.in")
+    p2_testing_x_list, emission_array = (emission(os.path.join(folder_name, "dev.in"), p2_X, p2_2d))
+    transmission_array = (transmission(p3_2d))
+
+    print("Generating forward scores for Viterbi")
 
     K = 5
     print("Performing Top " + str(K) + " Viterbi")
@@ -765,59 +799,19 @@ def main(folder_name):
     sequence, original_array = TopKViterbi(emission_array, transmission_array, os.path.join(folder_name, "dev.in"), K)
 
     print("Writing predicted labels")
-    # with open(os.path.join(folder_name, "dev.p2.out"), 'w', encoding="utf8") as outfile:
-    #     for key in emission_array:
-    #         if key.startswith("BLANK"):
-    #             outfile.write("\n")
-    #         else:
-    #             outfile.write(key + " " + convert_label(emission_array[key].index(max(emission_array[key]))) + "\n")
-    # with open(os.path.join(folder_name, "dev.p3.out"), 'w', encoding="utf8") as outfile:
-    #     for index_1 in range(0, len(original_array)):
-    #         for index_2 in range(0, len(original_array[index_1])):
-    #             outfile.write(original_array[index_1][index_2] + " " + sequence[index_1][index_2 + 1] + "\n")
-    #         outfile.write("\n")
     with open(os.path.join(folder_name, "dev.p4.out"), 'w', encoding="utf8") as outfile:
         for index_1 in range(0, len(original_array)):
             for index_2 in range(0, len(original_array[index_1])):
                 outfile.write(original_array[index_1][index_2] + " " + sequence[index_1][index_2 + 1] + "\n")
             outfile.write("\n")
-    #
-    # print("Parse entities")
-    # dev_entity_dict = parse_entities(os.path.join(folder_name, "dev.out"))
-    # dev_p2_entity_dict = parse_entities(os.path.join(folder_name, "dev.p2.out"))
-    # dev_p3_entity_dict = parse_entities(os.path.join(folder_name, "dev.p3.out"))
-    #
-    # print("Comparing entities..")
-    # correctly_predicted_p2 = 0
-    # for key in dev_entity_dict:
-    #     if key in dev_p2_entity_dict:
-    #         if dev_entity_dict[key] == dev_p2_entity_dict[key]:
-    #             correctly_predicted_p2 += 1
-    # precision_p2 = correctly_predicted_p2 / len(dev_p2_entity_dict)
-    # recall_p2 = correctly_predicted_p2 / len(dev_entity_dict)
-    #
-    # correctly_predicted_p3 = 0
-    # for key in dev_entity_dict:
-    #     if key in dev_p3_entity_dict:
-    #         if dev_entity_dict[key] == dev_p3_entity_dict[key]:
-    #             correctly_predicted_p3 += 1
-    # precision_p3 = correctly_predicted_p3 / len(dev_p3_entity_dict)
-    # recall_p3 = correctly_predicted_p3 / len(dev_entity_dict)
-    #
-    # print("Precision: {0}".format(precision_p2))
-    # print("Recall: {0}".format(recall_p2))
-    # print("Precision: {0}".format(precision_p3))
-    # print("Recall: {0}".format(recall_p3))
-    # try:
-    #     print("F-Score: {0}".format(2 / ((1 / precision_p2) + (1 / recall_p2))))
-    #     print("F-Score: {0}".format(2 / ((1 / precision_p3) + (1 / recall_p3))))
-    # except:
-    #     print("Your precision and recall seem to be zero. Check for errors.")
 
-# print(parse_entities("C:\\Users\\redbe\\OneDrive\\Documents\\ml-project\\testfile.out"))
-# print(parse_entities("C:\\Users\\redbe\\OneDrive\\Documents\\ml-project\\testfile.gold.out"))
 
-# main(SG_folder)
-main(EN_folder)
-# main(CN_folder)
-main(ES_folder)
+# We run all parts on the folders
+main_p2_3(SG_folder)
+main_p4(SG_folder)
+main_p2_3(EN_folder)
+main_p4(EN_folder)
+main_p2_3(CN_folder)
+main_p4(CN_folder)
+main_p2_3(ES_folder)
+main_p4(ES_folder)

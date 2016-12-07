@@ -226,18 +226,21 @@ def compare_observed_to_predicted(observed, predicted):
 #     print ("Usage on Linux/Mac:  python3 evalResult.py gold predictions")
 #     sys.exit()
 
-# SG_folder = os.path.join(os.path.dirname(os.path.realpath(__file__)), "data\SG")
-# CN_folder = os.path.join(os.path.dirname(os.path.realpath(__file__)), "data\CN")
+SG_folder = os.path.join(os.path.dirname(os.path.realpath(__file__)), "data\SG")
+CN_folder = os.path.join(os.path.dirname(os.path.realpath(__file__)), "data\CN")
 ES_folder = os.path.join(os.path.dirname(os.path.realpath(__file__)), "data\ES")
 EN_folder = os.path.join(os.path.dirname(os.path.realpath(__file__)), "data\EN")
+ESt_folder = os.path.join(os.path.dirname(os.path.realpath(__file__)), "data\ES-test")
+ENt_folder = os.path.join(os.path.dirname(os.path.realpath(__file__)), "data\EN-test")
 
-# folders_to_test = [SG_folder,CN_folder,ES_folder,EN_folder]
-folders_to_test = [ES_folder,EN_folder]
+folders_to_test = [SG_folder,CN_folder,ES_folder,EN_folder]
+
 
 for folder in folders_to_test:
     print("\nFolder: {0}".format(folder))
     gold = open(os.path.join(folder, "dev.out"), "r", encoding='UTF-8')
-    prediction = open(os.path.join(folder, "dev.p4.out"), "r", encoding='UTF-8')
+    print("p2")
+    prediction = open(os.path.join(folder, "dev.p2.out"), "r", encoding='UTF-8')
 
     #column separator
     separator = ' '
@@ -252,4 +255,63 @@ for folder in folders_to_test:
 
     #Compare
     compare_observed_to_predicted(observed, predicted)
+    gold = open(os.path.join(folder, "dev.out"), "r", encoding='UTF-8')
+    print("p3")
+    prediction = open(os.path.join(folder, "dev.p3.out"), "r", encoding='UTF-8')
+
+    # column separator
+    separator = ' '
+
+    # the column index for tags
+    outputColumnIndex = 1
+    # Read Gold data
+    observed = get_observed(gold)
+
+    # Read Predction data
+    predicted = get_predicted(prediction)
+
+    # Compare
+    compare_observed_to_predicted(observed, predicted)
+
+    gold = open(os.path.join(folder, "dev.out"), "r", encoding='UTF-8')
+    print("p4")
+    prediction = open(os.path.join(folder, "dev.p4.out"), "r", encoding='UTF-8')
+
+    # column separator
+    separator = ' '
+
+    # the column index for tags
+    outputColumnIndex = 1
+    # Read Gold data
+    observed = get_observed(gold)
+
+    # Read Predction data
+    predicted = get_predicted(prediction)
+
+    # Compare
+    compare_observed_to_predicted(observed, predicted)
+
+
+    gold = open(os.path.join(folder, "dev.out"), "r", encoding='UTF-8')
+    print("p5")
+
+    prediction = open(os.path.join(folder, "test.p5.out"), "r", encoding='UTF-8')
+
+    # column separator
+    separator = ' '
+
+    # the column index for tags
+    outputColumnIndex = 1
+    # Read Gold data
+    observed = get_observed(gold)
+
+    # Read Predction data
+    predicted = get_predicted(prediction)
+
+    # Compare
+    compare_observed_to_predicted(observed, predicted)
+
+
+
+
 

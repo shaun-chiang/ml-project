@@ -1,6 +1,9 @@
 from collections import defaultdict
 import random, os
 
+#set n here
+n=10
+
 class perceptronTagger():
     def __init__(self, weight_counts):
         self.weights = {}
@@ -65,14 +68,35 @@ ESt_folder = os.path.join(os.path.dirname(os.path.realpath(__file__)), "data\ES-
 ENt_folder = os.path.join(os.path.dirname(os.path.realpath(__file__)), "data\EN-test")
 
 folders_to_run = [SG_folder,CN_folder,ES_folder,EN_folder]
+test_folders_to_run = [ESt_folder, ENt_folder]
+
 
 for folder in folders_to_run:
 
     feature_pairs, weight_counts = parse_feature_tag_pairs(folder, "train")
 
     test = perceptronTagger(weight_counts)
-    test.train(10, feature_pairs)
+    test.train(n, feature_pairs)
 
-    with open(os.path.join(folder, "dev.p5.out"), 'w', encoding="utf8") as outfile:
+    with open(os.path.join(folder, "test.p5.out"), 'w', encoding="utf8") as outfile:
         for feature in parse_features(folder, "dev.in"):
             outfile.write(feature + " " + test.predict(feature)+"\n")
+
+
+feature_pairs, weight_counts = parse_feature_tag_pairs(ES_folder, "train")
+
+test = perceptronTagger(weight_counts)
+test.train(10, feature_pairs)
+
+with open(os.path.join(ESt_folder, "test.p5.out"), 'w', encoding="utf8") as outfile:
+    for feature in parse_features(ESt_folder, "test.in"):
+        outfile.write(feature + " " + test.predict(feature) + "\n")
+
+feature_pairs, weight_counts = parse_feature_tag_pairs(EN_folder, "train")
+
+test = perceptronTagger(weight_counts)
+test.train(n, feature_pairs)
+
+with open(os.path.join(ENt_folder, "test.p5.out"), 'w', encoding="utf8") as outfile:
+    for feature in parse_features(ENt_folder, "test.in"):
+        outfile.write(feature + " " + test.predict(feature) + "\n")

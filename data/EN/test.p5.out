@@ -38,7 +38,7 @@ a O
 video O
 http://t.co/QB1SeLvr O
 IN O
-THE O
+THE B-negative
 COMPANY O
 OF O
 WOLVES O
@@ -71,7 +71,7 @@ application O
 suggestion O
 for O
 tamil O
-twitter B-neutral
+twitter O
 software O
 . O
  
@@ -99,7 +99,7 @@ predictable O
 . O
  
 Thai O
-Government I-neutral
+Government O
 Raids O
 NGO B-neutral
 Injuring O
@@ -137,7 +137,7 @@ been O
 positive O
 http://t.co/D7FGwqd0 O
  
-My B-neutral
+My O
 nails O
 ended O
 up O
@@ -225,7 +225,7 @@ desperate O
 see O
 : O
 Berbatov O
-To I-neutral
+To O
 The O
 Rescue O
 - O
@@ -234,7 +234,7 @@ Manchester O
 United's O
 Endless O
 Desire O
-To I-neutral
+To O
 Win O
 Means O
 They O
@@ -248,7 +248,7 @@ From O
 http://bit.ly/gK9mS7 O
  
 How O
-To I-neutral
+To O
 Approach O
 A O
 Girl O
@@ -257,7 +257,7 @@ Success O
 Blueprint O
 On O
 How O
-To I-neutral
+To O
 Approach O
 A O
 Girl O
@@ -315,8 +315,8 @@ first O
 time O
 ! O
  
-Whitney B-neutral
-Houston I-neutral
+Whitney B-positive
+Houston I-positive
 fans O
 to O
 follow O
@@ -330,12 +330,12 @@ still O
 half O
 clueless O
 about O
-twitter B-neutral
+twitter O
 haha O
  
 Twitter B-neutral
 Surrenders O
-One O
+One B-positive
 User O
 â O
 s O
@@ -351,7 +351,7 @@ being O
 subpoenaed O
 by O
 a O
-Boston B-neutral
+Boston O
 d O
 ... O
 http://t.co/Kow1tpZR O
@@ -442,7 +442,7 @@ item O
 from O
 straightsilverinc O
 on O
-eBay B-neutral
+eBay B-positive
 http://www.froo.co/2eQZryF00s O
  
 Aliens O
@@ -530,7 +530,7 @@ http://t.co/HEyPueLN O
  
 http://t.co/gCFmndV5 O
 Barrack O
-Obama O
+Obama I-positive
 died O
 in O
 a O
@@ -613,7 +613,7 @@ School O
 Centre O
 of O
 the O
-State B-neutral
+State I-neutral
 Hermitage O
 . O
  
@@ -712,7 +712,7 @@ more O
 Tony B-neutral
 Robbins O
  
-Apple B-positive
+Apple B-neutral
 iPad O
 Shipments O
 Suddenly O
@@ -730,7 +730,7 @@ REPORT O
 ]: O
 However O
 , O
-Apple B-positive
+Apple B-neutral
 Stores O
 and O
 other O
@@ -754,7 +754,7 @@ March O
 4 O
 http://t.co/LdLxH0VE O
  
-Taylor I-neutral
+Taylor B-neutral
 Swift I-neutral
 wears O
 stripy O
@@ -843,7 +843,7 @@ http://t.co/aEKaZTGQ O
 L'Oreal O
 Brings O
 Solar O
-Power O
+Power I-positive
 to O
 Arkansa O
 s; O
@@ -972,7 +972,7 @@ http://t.co/OEdy9UND O
  
 Someone O
 at O
-Apple B-positive
+Apple B-neutral
 lost O
 their O
 prototype O
@@ -1032,7 +1032,7 @@ Introducing O
 the O
 Slate O
 Book O
-Review I-neutral
+Review O
 - O
 Over O
 the O
@@ -1068,7 +1068,7 @@ s: O
 Get O
 a O
 Free O
-Apple B-positive
+Apple B-neutral
 iPhone O
 4 O
 ! O
@@ -1139,11 +1139,11 @@ send O
 Kyle O
 Lowry O
 from O
-Houston I-neutral
+Houston I-positive
 to O
 the O
 2012 O
-NBA B-neutral
+NBA B-positive
 All-Star O
 Game O
 . O
@@ -1195,7 +1195,7 @@ shift O
 Did O
 It O
 Suck O
-Review I-neutral
+Review O
 ... O
 The O
 Town O
@@ -1241,7 +1241,7 @@ Group I-neutral
 - O
 Dustin O
  
-Social O
+Social B-negative
 Media O
 New O
 s: O
@@ -1333,7 +1333,7 @@ Plangrid O
 Builds O
 A O
 New O
-Market B-neutral
+Market I-positive
 For O
 The O
 iPa O
@@ -1405,7 +1405,7 @@ via O
 american I-positive
 Whole B-neutral
 Foods I-neutral
-Market B-neutral
+Market I-positive
 is O
 like O
 a O
@@ -1462,7 +1462,7 @@ Cover O
 awesome O
 Cant O
 sleep O
-Today O
+Today I-neutral
 what O
 can O
 i O
@@ -1534,8 +1534,8 @@ and O
 memory O
 . O
 R.I.P O
-Whitney B-neutral
-Houston I-neutral
+Whitney B-positive
+Houston I-positive
 . O
  
 I O
@@ -1548,7 +1548,7 @@ in O
 the O
 album O
 "Tallahassee O
-Car O
+Car B-neutral
 Museum" O
 http://t.co/AvOpsjIf O
  
@@ -1579,7 +1579,7 @@ played O
 a O
 song O
 Edge O
-To I-neutral
+To O
 Life O
 by O
 Recoil O
@@ -1810,11 +1810,11 @@ Frien O
 ds: O
 | O
 | O
-Travel I-positive
+Travel O
 - O
 Adventure O
-Travel I-positive
-News O
+Travel O
+News I-neutral
 ... O
 http://t.co/INGajE2c O
  
@@ -1849,7 +1849,7 @@ can O
 add O
 me O
 on O
-twitter B-neutral
+twitter O
 and O
 follow O
 me O
@@ -1967,7 +1967,7 @@ who's O
 been O
 stalking O
 your O
-twitter B-neutral
+twitter O
 ! O
 http://t.co/3cMuboLu O
  
@@ -2033,7 +2033,7 @@ via O
 @Digg O
  
 Stop O
-Internet O
+Internet B-neutral
 # O
 Censorship O
 ! O
@@ -2117,9 +2117,9 @@ Russia O
  
 Grimaldi O
 & O
-Associates I-neutral
+Associates I-positive
 - O
-International I-neutral
+International B-neutral
 Consulting O
 Services O
 at O
@@ -2151,7 +2151,7 @@ the O
 biography O
 of O
 Steve B-positive
-Jobs I-neutral
+Jobs I-positive
 , O
 any O
 other O
@@ -2208,12 +2208,12 @@ Senate B-neutral
 Gridlock O
 Explained O
 in O
-One O
+One B-positive
 Chart O
 : O
 http://t.co/71OfvykT O
  
-My B-neutral
+My O
 father O
 said O
 I O
@@ -2341,7 +2341,7 @@ Standard O
 Bank B-positive
 : O
 Worst-performing O
-bank O
+bank I-neutral
 shares O
 . O
 Capitec O
@@ -2354,7 +2354,7 @@ http://is.gd/kdojT O
  
 http://t.co/LSmoZsXl O
 Roundu O
-p: I-positive
+p: O
 Hartnell O
 baseball O
 loses O
@@ -2428,7 +2428,7 @@ Sr O
 Software O
 Engineer O
 ( O
-Mac O
+Mac B-neutral
 ) O
 -- O
 Cool O
@@ -2653,7 +2653,7 @@ http://1.usa.gov/mFUFEr O
 There O
 is O
 a O
-twitter B-neutral
+twitter O
 Campaign O
 to O
 # O
@@ -2783,7 +2783,7 @@ the O
 iPad O
 cheaper O
 than O
-Apple B-positive
+Apple B-neutral
 : O
 Vintage O
 Wedding O
@@ -2968,7 +2968,7 @@ http://ow.ly/5ODxE O
  
 @khadijahafeji O
 All O
-r O
+r I-neutral
 doing O
 well O
 .. O
@@ -3003,7 +3003,7 @@ http://t.co/EIOmLea O
  
 Warrior O
 Fit O
-Body O
+Body B-positive
 Solution O
 Boise O
 , O
@@ -3093,7 +3093,7 @@ their O
 pro-gev O
 circus O
 on O
-twitter B-neutral
+twitter O
 and O
 facebook B-neutral
 . O
@@ -3145,7 +3145,7 @@ together O
 -Jack O
 Nicklaus O
  
-News O
+News I-neutral
 Update O
 Recovering O
 From O
@@ -3191,17 +3191,17 @@ study O
  
 http://www.binayaksen.net/2011/01/stain-on-indias-record-irish-times-editorial/;title=Stain O
 on O
-India O
+India I-neutral
 â O
 s O
 record O
 : O
 Irish O
 Times I-neutral
-Editorial O
+Editorial I-neutral
  
 @hardrow O
-One O
+One B-positive
 of O
 our O
 Twitter B-neutral
@@ -3221,7 +3221,7 @@ you O
 ! O
  
 Ugarit O
-News O
+News I-neutral
 || O
 #Syria O
 || O
@@ -3249,7 +3249,7 @@ sister O
 http://t.co/UoSl3D0o O
  
 Chief O
-Minister O
+Minister I-neutral
 â O
 s O
 Office O
@@ -3267,7 +3267,7 @@ at O
 the O
 eGov O
 eIndia O
-Awards I-positive
+Awards O
 2011 O
 : O
 http://t.co/MI6vyuNc O
@@ -3300,7 +3300,7 @@ can O
 too O
 http://t.co/ZTKiudk O
  
-Houston I-neutral
+Houston I-positive
 billionaires O
 make O
 Forbes O
@@ -3316,7 +3316,7 @@ SPB O
 Shell O
 3D O
 ( O
-Android O
+Android B-positive
 3D O
 Launcher O
 ) O
@@ -3349,7 +3349,7 @@ Gibson I-neutral
 "Good O
 Lord O
 ! O
-Hollywood B-neutral
+Hollywood O
 Suddenly O
 Hot O
 for O
@@ -3410,7 +3410,7 @@ Throne O
 'My O
 Mercy O
 preceded O
-My B-neutral
+My O
 Anger.' O
 - O
 Bukhari O
@@ -3425,7 +3425,7 @@ from O
 tip O
 jar O
 - O
-Today O
+Today I-neutral
 apos O
 ; O
 s O
@@ -3449,7 +3449,7 @@ that O
 sounds O
 familiar O
 . O
-Haha B-negative
+Haha O
 . O
 More O
 info O
@@ -3470,12 +3470,12 @@ Why O
 Andy B-positive
 Reid O
 Has O
-To I-neutral
+To O
 Trade O
 Him O
 http://bit.ly/9ptj1h O
  
-My B-neutral
+My O
 Twitter B-neutral
 value O
 is O
@@ -3644,16 +3644,16 @@ Cola O
 Content O
 2020 O
 Part O
-One O
+One B-positive
 http://t.co/Vn2XJ95D O
 via O
 @youtube O
  
 #cpniagara O
 Prof B-neutral
-Taylor I-neutral
+Taylor B-neutral
 - O
-Community O
+Community I-neutral
 Mobilization O
 Prince O
 Albert B-positive
@@ -3707,7 +3707,7 @@ Macaroni O
 & O
 Cheese O
 - O
-Food I-neutral
+Food O
 on O
 Shine O
 http://t.co/cVktKYl7 O
@@ -3728,7 +3728,7 @@ New O
 Blog O
 Post O
 : O
-Microsoft B-neutral
+Microsoft O
 Ladies O
 Laptop O
 Tote O
@@ -3756,7 +3756,7 @@ I O
 will O
 be O
 interviewing O
-Paul B-neutral
+Paul B-positive
 Macartney O
 . O
 I O
@@ -3809,7 +3809,7 @@ Oil O
 and O
 Chocolate O
 : O
-World B-neutral
+World O
 First O
 Racing O
 proves O
@@ -3915,7 +3915,7 @@ quotes O
 http://t.co/Ohjbiu7 O
 ebay O
 MSN B-neutral
-Money O
+Money I-neutral
 Stock O
 Quotes O
 DJIA O
@@ -3994,7 +3994,7 @@ was O
 screening O
 tonight O
 in O
-Sony B-negative
+Sony B-neutral
 Pix O
 . O
  
@@ -4055,7 +4055,7 @@ $ O
 749.99 O
 http://amzn.to/9I2aEY O
  
-Yelp O
+Yelp B-neutral
 shares O
 surge O
 63 O
@@ -4174,7 +4174,7 @@ to O
 ... O
 http://t.co/oTocibbp O
  
-Clinton I-positive
+Clinton I-neutral
 to O
 continue O
 visit O
@@ -4184,11 +4184,11 @@ Kyi O
 - O
 U.S O
 . O
-Secretary I-neutral
+Secretary O
 of O
-State B-neutral
+State I-neutral
 Hillary B-positive
-Clinton I-positive
+Clinton I-neutral
 will O
 continue O
 her O
@@ -4297,7 +4297,7 @@ it O
 from O
 the O
 App O
-Store O
+Store I-positive
 ! O
 http://bit.ly/9MIwwm O
  
@@ -4309,7 +4309,7 @@ Female O
 Audience O
 Is O
 Changing O
-Social O
+Social B-negative
 Marketing O
 http://t.co/Rp2TuW83 O
 via O
@@ -4353,7 +4353,7 @@ new O
 tablet O
 [ O
 Tablets O
-News O
+News I-neutral
 ] O
 ~ O
 iPadOS O
@@ -4368,7 +4368,7 @@ and O
 Intercity O
 - O
 Careers.Org O
-Occupation I-positive
+Occupation O
 Profile O
  
 @haoliankia O
@@ -4402,7 +4402,7 @@ the O
 National B-neutral
 Environmental B-neutral
 Protection I-positive
-Agency O
+Agency I-neutral
 is O
 going O
 to O
@@ -4432,7 +4432,7 @@ app O
 . O
 Not O
 cool O
-Apple B-positive
+Apple B-neutral
 ! O
 http://t.co/VZQ83Zi4 O
  
@@ -4544,7 +4544,7 @@ to O
 have O
 sex O
 in O
-Bangalore O
+Bangalore B-positive
 8722971642 O
 : O
 Call O
@@ -4561,7 +4561,7 @@ tem O
 ... O
 http://twurl.nl/4zt676 O
  
-To I-neutral
+To O
 claim O
 twenty O
 free O
@@ -4686,8 +4686,8 @@ Countdown O
 . O
 http://t.co/VPLeynuU O
  
-Whitney B-neutral
-Houston I-neutral
+Whitney B-positive
+Houston I-positive
 is O
 not O
 yet O
@@ -4720,7 +4720,7 @@ Inspired O
 An O
 Open O
 Letter O
-To I-neutral
+To O
 All O
 JV O
 Partners O
@@ -4815,7 +4815,7 @@ speech O
 ? O
 http://t.co/vXT1tXS O
  
-David B-positive
+David O
 Beckham I-positive
 wants O
 ''one O
@@ -4852,7 +4852,7 @@ clearance O
 rate O
 - O
 The O
-Real B-negative
+Real O
 Estate O
 Panel I-neutral
 http://t.co/RDXwlclp O
@@ -4862,11 +4862,11 @@ discrimination O
 latest O
 tren O
 d: O
-THE O
+THE B-negative
 Manitoba O
 Human O
 Rights O
-Commission O
+Commission I-neutral
 says O
 complaints O
 based O
@@ -4913,7 +4913,7 @@ Presidents" O
 by O
 The O
 Civil O
-Arab O
+Arab B-neutral
 , O
 Amer O
 Zahr O
@@ -5022,7 +5022,7 @@ Congratulations O
 to O
 our O
 Champ O
-Roger I-neutral
+Roger I-positive
 #Federer O
 on O
 winning O
@@ -5044,7 +5044,7 @@ in O
 Moscow O
 - O
 @Demotix O
-News O
+News I-neutral
 http://t.co/M9OjYA5F O
  
 Nepal O
@@ -5053,7 +5053,7 @@ Awaz O
 Video O
 Blog O
 : O
-Jesus B-neutral
+Jesus B-positive
 was O
 a O
 Buddhist O
@@ -5142,11 +5142,11 @@ Why O
 Are O
 They O
 Important O
-To I-neutral
+To O
 Your O
 Automotive O
 Ad O
-Agency O
+Agency I-neutral
 ? O
 http://bit.ly/9lWwOs O
  
@@ -5195,7 +5195,7 @@ http://www.cheapoldcarsinusa.com/cheapoldcarslisting.php?id=9985 O
  
 RIP O
 Etta O
-James B-positive
+James B-neutral
 , O
 a O
 lady O
@@ -5287,12 +5287,12 @@ will O
 ! O
  
 Shaklee B-neutral
-News O
+News I-neutral
 Dr B-neutral
 Forrest O
 C I-neutral
 Shaklee B-neutral
-Story O
+Story I-neutral
 YouTube B-neutral
 - O
 YouTube B-neutral
@@ -5323,7 +5323,7 @@ Austin O
 and O
 gave O
 it O
-5 O
+5 I-neutral
 stars O
 http://t.co/EtrJtHBe O
 #Kindle O
@@ -5375,7 +5375,7 @@ PAD O
 - O
 ( O
 MedPage B-neutral
-Today O
+Today I-neutral
 ) O
 -- O
 GAITHERSBURG O
@@ -5407,7 +5407,7 @@ http://t.co/nT30Bp01 O
 #NFL O
  
 @Stefsunyanzi O
-Paul B-neutral
+Paul B-positive
 the O
 octopus O
 defeated O
@@ -5430,7 +5430,7 @@ F O
 . O
 Kennedy O
 , O
-American B-neutral
+American O
 politician O
 . O
  
@@ -5446,7 +5446,7 @@ Lush O
  
 KEEP O
 UP O
-THE O
+THE B-negative
 GREAT O
 WORK O
 - O
@@ -5609,7 +5609,7 @@ to O
 represent O
 you O
 in O
-NY B-positive
+NY B-neutral
 County I-neutral
 if O
 you O
@@ -5691,7 +5691,7 @@ included O
  
 Intel B-positive
 CEO O
-Paul B-neutral
+Paul B-positive
 Otellini O
 Details O
 Strategic O
@@ -5703,7 +5703,7 @@ Orange B-neutral
 Lava O
 ... O
 - O
-Daily I-neutral
+Daily O
 Disruption O
 http://t.co/Rfc1tOod O
  
@@ -5764,9 +5764,9 @@ On O
 Sunday O
 , O
 November O
-13 I-neutral
+13 O
 , O
-King I-neutral
+King O
 Saud O
 ... O
 http://t.co/v2mBny4w O
@@ -5824,7 +5824,7 @@ http://bit.ly/qpMBR7 O
 Anti-riot O
 guard O
 , O
-security I-negative
+security I-neutral
 forces I-neutral
 & O
 plain O
@@ -5854,7 +5854,7 @@ Herman B-neutral
 Cain I-neutral
 if O
 Clarence O
-Thomas B-neutral
+Thomas B-positive
 is O
 his O
 most O
@@ -6001,7 +6001,7 @@ this O
 video O
 out O
 -- O
-Justin B-positive
+Justin B-neutral
 Bieber I-neutral
 ft O
 Patriarch O
@@ -6130,7 +6130,7 @@ from O
 cities O
 , O
 says O
-Arab O
+Arab B-neutral
 League O
 http://t.co/J3gFhZXg O
  
@@ -6254,7 +6254,7 @@ page O
 . O
  
 BBC B-neutral
-News O
+News I-neutral
 Australia O
 leadership O
 PM O
@@ -6288,7 +6288,7 @@ http://t.co/5eg5ZJ53 O
 vÃ­a O
 @youtube O
  
-To I-neutral
+To O
 Beat O
 the O
 Law O
@@ -6296,7 +6296,7 @@ of O
 Large O
 Numbers O
 , O
-Apple B-positive
+Apple B-neutral
 Must O
 Expand O
 Its O
@@ -6317,7 +6317,7 @@ happiness O
 Yahoo B-neutral
 ! O
 Lifestyle O
-India O
+India I-neutral
 http://t.co/NO1fFvDf O
  
 CIA O
@@ -6358,7 +6358,7 @@ Prince O
 in O
 Wigan O
 ( O
-Sky I-neutral
+Sky O
 Sport O
 ): O
 Share O
@@ -6418,7 +6418,7 @@ anyone O
 ? O
 http://t.co/1ELgio6 O
  
-Apple B-positive
+Apple B-neutral
 unveils O
 "the O
 new O
@@ -6492,7 +6492,7 @@ up O
 Stephen B-neutral
 . O
  
-Today O
+Today I-neutral
 had O
 the O
 pleasure O
@@ -6537,14 +6537,14 @@ art O
 ... O
 http://t.co/b45UIT0Y O
  
-Security I-neutral
+Security O
 First O
 : O
 Google B-neutral
 at O
 the O
 Cyber O
-Security I-neutral
+Security O
 Strategies O
 Summit O
 http://feedly.com/k/kfL60P O
@@ -6586,7 +6586,7 @@ to O
 get O
 tons O
 of O
-twitter B-neutral
+twitter O
 followers O
 ! O
 http://t.co/s9oC91Zf O
@@ -6695,7 +6695,7 @@ Test O
 & O
 Keep O
 New O
-Sony B-negative
+Sony B-neutral
 Vaio O
 Laptop O
 for O
@@ -6737,12 +6737,12 @@ LET O
 Get O
 FREE O
 MORE O
-TWITTER B-neutral
+TWITTER B-positive
 FOLLOWERS O
 ! O
 http://tinyurl.com/26k6m3l O
  
-Obama O
+Obama I-positive
 'Allow O
 Small I-positive
 Business O
@@ -6760,7 +6760,7 @@ growth O
 , O
 Pres O
 . O
-Obama O
+Obama I-positive
 proposed O
 the O
 ... O
@@ -6826,7 +6826,7 @@ CA O
 . O
 http://t.co/tRnwqMl O
  
-Obama O
+Obama I-positive
 May O
 Back O
 Hiring O
@@ -6836,27 +6836,27 @@ Construction O
 Spending O
 to O
 Spur O
-Jobs I-neutral
+Jobs I-positive
 â O
 BusinessWeek O
 http://t.co/PCBJYSw O
  
-Obama O
+Obama I-positive
 Administration O
 Requests O
 More O
-Money O
+Money I-neutral
 for O
 IR O
 S: O
 By O
-Michael B-positive
+Michael B-neutral
 Cohn O
 , O
 Accounting O
-Today O
+Today I-neutral
 The O
-Obama O
+Obama I-positive
 administration O
 has O
 ... O
@@ -6900,7 +6900,7 @@ Reuters B-neutral
 Blogs O
 http://t.co/jCEMvRP O
  
-State B-neutral
+State I-neutral
 NAACP O
 endorses O
 â O
@@ -6966,7 +6966,7 @@ http://tl.gd/82itsh O
 Kris O
 Humphries O
 Refuses O
-To I-neutral
+To O
 Sign O
 Divorce O
 Papers O
@@ -7028,7 +7028,7 @@ Selenators O
 "working O
 together" O
 . O
-My B-neutral
+My O
 Ass O
 , O
 Working O
@@ -7047,7 +7047,7 @@ IPO B-neutral
 , O
 LinkedIn B-positive
 Set O
-To I-neutral
+To O
 Begin O
 Trading O
 On O
@@ -7086,7 +7086,7 @@ rich O
 muslim O
 an O
 christ O
-al O
+al B-neutral
 kind O
 of O
 egyptian O
@@ -7259,7 +7259,7 @@ azz O
 comments O
 #cmonson O
  
-Apple B-positive
+Apple B-neutral
 Subpoenaed O
 By O
 FTC O
@@ -7275,7 +7275,7 @@ U.S O
 . O
 Federal B-neutral
 Trade O
-Commission O
+Commission I-neutral
 has O
 sub O
 ... O
@@ -7287,7 +7287,7 @@ R5.7bn O
 loan O
 from O
 US O
-bank O
+bank I-neutral
 http://t.co/zqj0mSA O
  
 Courage O
@@ -7320,7 +7320,7 @@ Kircher O
 Donald I-neutral
  
 Alfie O
-Allen O
+Allen I-neutral
 and O
 Jaime O
 Winstone O
@@ -7362,7 +7362,7 @@ Italy O
 How O
 Teenagers O
 Learned O
-To I-neutral
+To O
 Hate O
 Joseph O
 Kony O
@@ -7439,7 +7439,7 @@ Explains O
 Everything O
 You O
 Need O
-To I-neutral
+To O
 Know O
 About O
 The O
@@ -7547,7 +7547,7 @@ art O
 Not O
 the O
 official O
-Apple B-positive
+Apple B-neutral
 Accessory O
 though O
 ... O
@@ -7563,7 +7563,7 @@ t O
 know O
 about O
 Steve B-positive
-Jobs I-neutral
+Jobs I-positive
 http://tnw.to/16E4n O
 shared O
 by O
@@ -7604,7 +7604,7 @@ Third O
 Quarterly O
 Results O
 and O
-Market B-neutral
+Market I-positive
 Guidance O
 ... O
 http O
@@ -7641,7 +7641,7 @@ so O
 http://t.co/BZV2D9as O
  
 @ZandraAziela O
-My B-neutral
+My O
 name O
 is O
 LUCK O
@@ -7670,7 +7670,7 @@ LOL O
 . O
  
 Interior O
-Minister O
+Minister I-neutral
 assigned O
 to O
 the O
@@ -7761,7 +7761,7 @@ John B-neutral
 Newman O
 track O
 'FEEL O
-THE O
+THE B-negative
 LOVE' O
 . O
 http://t.co/goeTy69q O
@@ -7812,7 +7812,7 @@ and O
 iPhone O
 4S O
 ( O
-Black I-positive
+Black O
 ): O
 AmazonBasics O
 Silicone O
@@ -8053,7 +8053,7 @@ nipples O
 . O
 -- O
 Albert B-positive
-Einstein B-neutral
+Einstein I-positive
  
 @KaemKyu15 O
 because O
@@ -8118,7 +8118,7 @@ this O
 one O
 is O
 of O
-Canada B-neutral
+Canada O
  
 sponsor O
 http://t.co/FyTEHN4G O
@@ -8174,7 +8174,7 @@ founder O
 Payam O
 Akhavan O
 -- O
-Canada B-neutral
+Canada O
 : O
 Haven O
 of O
@@ -8195,7 +8195,7 @@ for O
 U.S O
 . O
 Summer O
-Tour O
+Tour I-neutral
 ... O
 http://tinyurl.com/24toaml O
  
@@ -8203,7 +8203,7 @@ http://tinyurl.com/24toaml O
 @ O
 BarackObama O
 : O
-International I-neutral
+International B-neutral
 community O
 soft O
 words O
@@ -8262,7 +8262,7 @@ party O
 loss O
 - O
 Deseret O
-News O
+News I-neutral
 http://tinyurl.com/28rs45o O
  
 Cable O
@@ -8281,13 +8281,13 @@ http://t.co/FriyLxyl O
 Was O
 the O
 New O
-Apple B-positive
+Apple B-neutral
 iPad O
 Made O
 Ethically O
 ? O
 : O
-Apple B-positive
+Apple B-neutral
 mania O
 took O
 over O
@@ -8311,7 +8311,7 @@ turn O
 RT O
 @stcom O
 Primary O
-One O
+One B-positive
 registration O
 for O
 2012 O
@@ -8353,7 +8353,7 @@ for O
 less O
 money O
 in O
-eBay B-neutral
+eBay B-positive
 . O
 Learn O
 how O
@@ -8397,7 +8397,7 @@ March O
 , O
 2012 O
 : O
-5 O
+5 I-neutral
 : O
 21 O
 A O
@@ -8419,7 +8419,7 @@ Baseball O
 Warehouse O
 : O
 Easy O
-To I-neutral
+To O
 Understand O
 Information I-neutral
 @ O
